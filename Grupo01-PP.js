@@ -14,9 +14,8 @@ function BinarioADecimal(num) {
 
 //Solución 2 - BinarioADecimal
 function BinarioADecimal(num) {
-  const arra = Array.from(num.toString()).map(Number)
-   var acc=0
-
+   const arra = Array.from(num.toString()).map(Number);
+   var acc=0;
  	for(let i=0; i<arra.length;i++) {
  	  acc = acc + arra[i]*(2 **(arra.length-(i+1)))
  	}
@@ -28,11 +27,11 @@ function BinarioADecimal(num) {
 function DecimalABinario(num) {
 var arra = []
     while( num >= 1 ) {
-      
         arra.unshift(num%2);
-    
         num=Math.floor(num/2);
     }
 
  return arra.join('')
 }
+
+//--------------- 01 ----------------------//
