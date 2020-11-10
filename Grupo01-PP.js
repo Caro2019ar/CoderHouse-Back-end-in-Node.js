@@ -14,7 +14,7 @@ function BinarioADecimal(num) {
 
 //Solución 2 - BinarioADecimal
 function BinarioADecimal(num) {
-   const arra = Array.from(num.toString()).map(Number);
+   var arra = num.split("");
    var acc=0;
  	for(let i=0; i<arra.length;i++) {
  	  acc = acc + arra[i]*(2 **(arra.length-(i+1)))
