@@ -9,8 +9,7 @@ function promiseReadFile(file) {
 				resolve(file);
 				(function doTempo(tempo = 1000) {
 					let cnt = 0;
-					// let arr = "aff bff cd ".split(" ");
-					id = setInterval(() => {
+						id = setInterval(() => {
 						if (!(cnt < arr.length - 1)) {
 							clearInterval(id);
 						}
