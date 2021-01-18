@@ -1,2 +1,2 @@
-# Grupo-01
-Soluciones de los Homeworks de Henry
+# CoderHouse - desafios
+Desafios de CoderHouse
