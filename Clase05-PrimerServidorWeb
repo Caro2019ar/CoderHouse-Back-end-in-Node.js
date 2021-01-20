@@ -1,0 +1,23 @@
+const http = require("http");
+
+const numAleat1 = (min, max) => {
+	return Math.round(Math.random() * (max - min) + min);
+};
+const numAleat2 = (min, max) => {
+	return parseFloat(Math.random() * (max - min) + min).toFixed(2);
+};
+
+const obj = {
+	id: `${numAleat1(1, 10)}`,
+	title: `Producto ${numAleat1(1, 10)}`,
+	price: `${numAleat2(0.0, 9999.99)}`,
+	thumbnail: `Foto ${numAleat1(1, 10)}`,
+};
+
+const server = http.createServer((req, res) => {
+	res.end(JSON.stringify(obj));
+});
+const PORT = process.env.PORT || 3000;
+server.listen(PORT, () => {
+	console.log(`Servidor en ${PORT}`);
+});
