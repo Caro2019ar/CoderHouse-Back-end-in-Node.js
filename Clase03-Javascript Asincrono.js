@@ -1,40 +1,29 @@
-const file = "Hola mundo desde una constante más unas palabras termina";
-let acum;
+const file1 = "1Hola 1desde 1una 1constante";
+const file2 = "2Hola 2desde 2una 2constante";
+const file3 = "3Hola 3desde 3una 3constante";
 
-function getArr(file, tempo) {
-	return new Promise(function (resolve) {
-		const arr = file.split(" ");
-		let cnt = 0;
-		if (acum == undefined) {
-			acum = 0;
-		}
-		id = setInterval(() => {
-			if (!(cnt < 2)) {
-				resolve(clearInterval(id));
-				//Obs> resolve() no lugar certo fez a mensagem de fim aparecer no final
+const fn = (file, time = 1000, callback) => {
+	const arr = file.split(" ");
+	let cnt = 0;
+	let id = setInterval(
+		(words) => {
+			if (cnt < words.length) {
+				console.log(words[cnt]);
+				cnt++;
+			} else {
+				clearInterval(id);
+				callback(arr.length);
 			}
-			cnt++;
-			acum = parseInt(acum);
-			console.log(arr[acum++]);
-		}, (tempo = 1000));
+		},
+		time,
+		arr
+	);
+};
+
+fn(file1, 500, (count) => {let totalCount = count;
+	fn(file2, 500, (count) => {totalCount += count;
+		fn(file3, 500, (count) => {totalCount += count;
+			console.log(`Processo completo con ${totalCount} palabras`);
+		});
 	});
-	acum = acum + 1;
-}
-
-async function final() {
-	//obs> esta função final não funcionava quando estava associada a uma const
-	try {
-		console.log("1a llamada:");
-		await getArr(file, 500);
-		console.log("2a llamada:");
-		await getArr(file, 500);
-		console.log("3a llamada:");
-		await getArr(file, 500);
-
-		console.log(`Processo completo con ${acum} palabras`);
-	} catch (err) {
-		console.log(err);
-	}
-}
-
-final();
+});
