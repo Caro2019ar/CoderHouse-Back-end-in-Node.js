@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Document</title>
+		<!-- <script src="https://unpkg.com/rxjs/bundles/rxjs.umd.min.js"></script> -->
+		<!-- <script src="https://unpkg.com/@reactivex/rxjs@5.3.0/dist/global/Rx.js"></script> -->
+		<!-- <script src="https://unpkg.com/@reactivex/rxjs@6.6.3/dist/global/rxjs.umd.js"></script> -->
+		<style>
+			body {
+				font-family: "Arial";
+				background: lightgray;
+			}
+			#result {
+				padding: 10px 10px 10px 10px;
+			}
+		</style>
+		
+	</head>
+	<body>
+		<h4>Desafio 4 - Observables/RxJS</h4>
+		<label>Escriba un texto:</label>
+		<input id="source" />
+		<span id="result"></span>
+
+		<script type="module">
+			import { fromEvent } from "https://dev.jspm.io/rxjs@6/_esm2015";
+			import {
+				filter,
+				map,
+			} from "https://dev.jspm.io/rxjs@6/_esm2015/operators";
+
+			const input = document.getElementById("source");
+			const mirror = document.getElementById("result");
+			const observable = fromEvent(input, "keyup");
+			let mirrorText = "";
+			const subscription = observable.subscribe(
+				(event) => {
+					mirrorText += event.key;
+
+					if (mirrorText === "error") {
+						subscription.error("Digitou error");
+					}
+					if (mirrorText === "complete") {
+						subscription.complete();
+					}
+					result.textContent = mirrorText.split("").reverse().join("");
+					setTimeout(() => {
+						subscription.unsubscribe();
+						clean();
+					}, 30000);
+				},
+				(error) => {
+					console.log(error);
+					clean();
+				},
+				() => {
+					console.log("Digitou complete");
+					clean();
+				}
+			);
+
+			const clean = () => {
+				mirrorText = "";
+				input.disabled = true;
+				input.value = "";
+				mirror.textContent = "";
+			};
+		</script>
+	</body>
+</html>
