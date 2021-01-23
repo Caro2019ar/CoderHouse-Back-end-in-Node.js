@@ -1,3 +1,6 @@
+//En Glitch: https://samba-server2.glitch.me/
+
+
 const http = require("http");
 
 const numAleat1 = (min, max) => {
