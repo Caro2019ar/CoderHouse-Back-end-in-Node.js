@@ -1,0 +1,5 @@
+[
+	{ "title": "Escuadra", "price": 123.45, "thumbnail": "https1", "id": 1 },
+	{ "title": "Calculadora", "price": 234.56, "thumbnail": "https2", "id": 2 },
+	{ "title": "Globo", "price": 345.67, "thumbnail": "https3", "id": 3 }
+]
