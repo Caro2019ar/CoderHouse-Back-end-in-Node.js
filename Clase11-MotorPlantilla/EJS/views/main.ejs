@@ -1,0 +1,35 @@
+<%-include('partials/header'); -%>
+
+  <div clas="container-sm" style="padding: 50px 50px 10px">
+    <h3 style="color: blue">Vista de productos</h3>
+    <br>
+
+    <% if (lista) { %>
+      <table class="table table-dark">
+        <thead>
+          <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Foto</th>
+
+          </tr>
+        </thead>
+        <tbody>
+          <% lista.forEach((prod)=>{ %>
+            <tr>
+              <td><%=prod.title %></td>
+                <td><%=prod.price %></td>
+                  <td><img src="<%=prod.thumbnail %>" width=50 height=50></td>
+                </tr>
+                <%}) %>
+                </tbody>
+              </table>
+              <% } else { %>
+                <div clas="container-sm" style="background-color: #fdf1d6;
+                  padding: 10px 10px 10px">
+                  <h5 style="color: #91684a"> No se encontraron productos
+                  </h5>
+                </div>
+                <% } %>
+
+                  <%-include('partials/footer'); -%>
