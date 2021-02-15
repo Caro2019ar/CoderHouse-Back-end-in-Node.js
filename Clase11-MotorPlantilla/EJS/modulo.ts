@@ -27,18 +27,16 @@ class ManejaProd {
 
 	devProd(id: number) {
 		let prodDev = this.prodPorId(id);
-		if (!prodDev.length) {
-			return { error: "este producto no existe" };
-		}
-		return prodDev;
+		return !prodDev.length ? { error: "este producto no existe" } : prodDev;
 	}
 
 	vista() {
-		if (!productos.length) {
-			return { error: "No hay producto cargados" };
-		}
-		console.log("vista", productos);
-		return Object.values(productos);
+		return (
+			!productos.length
+				? { error: "No hay producto cargados" }
+				: console.log("vista", productos),
+			Object.values(productos)
+		);
 	}
 	actualizar(id: number, prod: Producto) {
 		let indexAactualizar = productos.map((e: any) => e.id).indexOf(Number(id));
