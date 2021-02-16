@@ -1,0 +1,35 @@
+include ./partials/header
+
+	div(clas="container-sm" style="padding: 50px 50px 10px")
+		form(
+			action="/api/productos"
+			class="form-signin"
+			enctype="application/x-www-form-urlencoded"
+			method="POST")
+			h3(style="color: blue") Ingrese Producto
+			p
+			div(class="form-group col-md6")
+				label Nombre
+				input(
+					type="text"
+					class="form-control"
+					name="title"
+					placeholder="Producto")
+			div(class="form-group")
+				label Precio
+				input(
+					type="text"
+					class="form-control"
+					name="price"
+					placeholder="Precio")
+			div(class="form-group")
+				label Foto URL
+				input(
+					type="text"
+					class="form-control"
+					name="thumbnail"
+					placeholder="http")
+			button(type="submit" class="btn btn-success") Submit
+	
+
+	
