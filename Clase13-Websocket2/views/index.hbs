@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous"
+            />
+    </head>
+    <body style="background-color: #EAF0F4">
+        <div clas="container-sm" style="padding: 50px 50px 10px">
+            <form onsubmit="return addProduto(this)"
+                id="formProd"
+                class="form-signin"
+                enctype="application/x-www-form-urlencoded"
+                {{!-- autocomplete="off" --}}>
+                <h3 style="color: blue">Ingrese Producto</h3>
+                <p></p>
+                <div class="form-group col-md6">
+                    Nombre
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="title"
+                        placeholder="Producto"
+                        />
+                </div>
+                <div class="form-group">
+                    Precio
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="price"
+                        placeholder="Precio"
+                        />
+                </div>
+                <div class="form-group">
+                    Foto URL
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="thumbnail"
+                        placeholder="http"
+                        />
+                </div>
+                <button type="submit" class="btn btn-success">Submit</button>
+            </form>
+            <br>
+            <h3 style="color: blue">Lista de productos</h3>
+            <table id='cabeca' class="table table-dark">
+                <thead>
+                    <tr>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Precio</th>
+                        <th scope="col">Foto</th>
+                    </tr>
+                </thead>
+                <tbody id="listaProd">
+                </tbody>
+            </table>
+            <br>
+
+            <br>
+            <h3 style="color: blue">Centro de Mensajes</h3>
+            <form id="formMess" onsubmit="return addMessage(this)">
+                <div class="form-group col-md6">
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="email"
+                        placeholder="pedro@gmail.com"
+                        style="width:50%"
+                        required
+                        />
+                    <hr>
+                    <div id="messages"></div>
+                    <p></p>
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="texto"
+                        placeholder="Ingresá un mensaje..."
+                        style="width:30%"
+                        />
+                    <p></p>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+            </form>
+        </div>
+        <script src="/socket.io/socket.io.js"></script>
+        <script type="text/javascript" src="main.js"></script>
+    </body>
+</html>
