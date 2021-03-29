@@ -1,0 +1,110 @@
+{ 
+    "_id" : ObjectId("6057f6581b7806470786457b"), 
+    "nombre" : "Calculadora", 
+    "precio" : "120", 
+    "foto" : "https:1", 
+    "descripcion" : "calculadora HP12C", 
+    "codigo" : "9282", 
+    "stock" : "34", 
+    "timestamp" : ISODate("2021-03-22T01:43:52.031+0000")
+}
+{ 
+    "_id" : ObjectId("6057f6581b7806470786457c"), 
+    "nombre" : "Globo", 
+    "precio" : "580", 
+    "foto" : "https:22", 
+    "descripcion" : "Globo Tierra", 
+    "codigo" : "282", 
+    "stock" : "34", 
+    "timestamp" : ISODate("2021-03-22T01:43:52.031+0000")
+}
+{ 
+    "_id" : ObjectId("6057f6581b7806470786457d"), 
+    "nombre" : "Reloj", 
+    "precio" : "900", 
+    "foto" : "https:33", 
+    "descripcion" : "Rolex", 
+    "codigo" : "92", 
+    "stock" : "1", 
+    "timestamp" : ISODate("2021-03-22T01:43:52.031+0000")
+}
+{ 
+    "_id" : ObjectId("6057f6581b7806470786457e"), 
+    "nombre" : "Escuadra", 
+    "precio" : "1280", 
+    "foto" : "https:44", 
+    "descripcion" : "Escuadra de plástico", 
+    "codigo" : "988", 
+    "stock" : "3", 
+    "timestamp" : ISODate("2021-03-22T01:43:52.032+0000")
+}
+{ 
+    "_id" : ObjectId("6057f6581b7806470786457f"), 
+    "nombre" : "Calculadora", 
+    "precio" : "1700", 
+    "foto" : "https:55", 
+    "descripcion" : "calculadora Plata HP12C", 
+    "codigo" : "82", 
+    "stock" : "3", 
+    "timestamp" : ISODate("2021-03-22T01:43:52.032+0000")
+}
+{ 
+    "_id" : ObjectId("6057f6581b78064707864580"), 
+    "nombre" : "Globo azul", 
+    "precio" : "2300", 
+    "foto" : "https:66", 
+    "descripcion" : "Globo", 
+    "codigo" : "456", 
+    "stock" : "45", 
+    "timestamp" : ISODate("2021-03-22T01:43:52.032+0000")
+}
+{ 
+    "_id" : ObjectId("6057f6581b78064707864581"), 
+    "nombre" : "Reloj2", 
+    "precio" : "2860", 
+    "foto" : "https:77", 
+    "descripcion" : "Casio", 
+    "codigo" : "778", 
+    "stock" : "7", 
+    "timestamp" : ISODate("2021-03-22T01:43:52.032+0000")
+}
+{ 
+    "_id" : ObjectId("6057f6581b78064707864582"), 
+    "nombre" : "Escuadra", 
+    "precio" : "3350", 
+    "foto" : "https:88", 
+    "descripcion" : "Escuadra de oro", 
+    "codigo" : "887", 
+    "stock" : "2", 
+    "timestamp" : ISODate("2021-03-22T01:43:52.032+0000")
+}
+{ 
+    "_id" : ObjectId("6057f6581b78064707864583"), 
+    "nombre" : "Calculadora", 
+    "precio" : "4320", 
+    "foto" : "https:99", 
+    "descripcion" : "calculadora AI", 
+    "codigo" : "997", 
+    "stock" : "3", 
+    "timestamp" : ISODate("2021-03-22T01:43:52.032+0000")
+}
+{ 
+    "_id" : ObjectId("6057f6581b78064707864584"), 
+    "nombre" : "Globo negro", 
+    "precio" : "4990", 
+    "foto" : "https:10", 
+    "descripcion" : "Globo negro black", 
+    "codigo" : "100", 
+    "stock" : "1", 
+    "timestamp" : ISODate("2021-03-22T01:43:52.032+0000")
+}
+{ 
+    "_id" : ObjectId("6057f76a1b78064707864585"), 
+    "nombre" : "Pantalones", 
+    "precio" : "4500", 
+    "foto" : "https:11", 
+    "descripcion" : "pantalones CK", 
+    "codigo" : "111", 
+    "stock" : "12", 
+    "timestamp" : ISODate("2021-03-22T01:48:26.317+0000")
+}

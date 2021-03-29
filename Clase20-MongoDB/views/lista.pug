@@ -1,0 +1,41 @@
+include ./partials/header
+  nav(class="navbar navbar-expand-lg navbar-light bg-light")
+    a(class="navbar-brand" href="#" style="color:grey") Vista de productos
+  div(style="padding: 10px 50px 10px")
+    h5(style="color: grey") 
+    br
+    div
+      if lista.length 
+        div(class="row")
+          each prod in lista
+            div(class="card w-25" style="margin:5px")
+              div(class="card-body")
+                img(class="card-img-top" src=prod.foto )
+                h5(class="card-title text-center" style="margin:10px")=prod.nombre
+                tbody
+                  table(class="table-responsive")
+                    tr
+                      th(scope="row") Descripcion 
+                      td= prod.descripcion
+                    tr  
+                      th(scope="row") Precio
+                      td= prod.precio
+                    tr
+                      th(scope="row") Id
+                      td= prod.id
+                    tr
+                      th(scope="row") Codigo
+                      td= prod.codigo
+                    tr
+                      th(scope="row") Timestamp
+                      td= new Date().toLocaleString("en-US")
+                    tr
+                      th(scope="row") Stock
+                      td= prod.stock                                            
+              div(class="card-footer" style="text-align:center")
+                button(class="btn btn-outline-danger") Actualizar
+                button(class="btn btn-outline-warning" style="margin:5px") Eliminar
+      else 
+        div(clas="container-sm" style="background-color:#ebf2f7; padding: 10px 10px 10px")
+          h5(style="color: #91684a") No se encontraron productos
+
