@@ -1,0 +1,11 @@
+{
+	"author": {
+		"id": "tj@gmail.com",
+		"nombre": "Toby",
+		"apellido": "Jobs",
+		"edad": 25,
+		"alias": "Steve",
+		"avatar": "http://www.image.com/"
+	},
+	"text": "Hola, que pasa???"
+}
