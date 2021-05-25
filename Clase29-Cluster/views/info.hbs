@@ -1,38 +1,21 @@
 <link rel="stylesheet" href="css/estilos.css" />
 
-<h6 class="alert alert-primary">
-	- Num de procesadores
-	{{numCPUs}}
-	<br />
-	<br />
-	-Argumentos de entrada:
-	<br />
-	{{argum}}
-	<br />
-	<br />
-	- Nombre de la plataforma (sistema operativo):
-	{{plat}}
-	<br />
-	<br />
-	- Versión de node.js
-	{{ver}}
-	<br />
-	<br />
-	- Uso de memoria
-	{{mem}}
-	<br />
-	<br />
-	- Path de ejecución
-	{{execPath}}
-	<br />
-	<br />
-	- Process id
-	{{pid}}
-	<br />
-	<br />
-	- Carpeta corriente
-	{{carp}}
-</h6>
+<section class="alert alert-primary">
+	<p><b>-Argumentos de entrada:</b>{{argum}}</p>
+
+	<p><b>- Nombre de la plataforma (sistema operativo): </b>{{plat}}</p>
+
+	<p><b>- Versión de node.js: </b>{{ver}}</p>
+
+	<p><b>- Uso de memoria: </b>{{mem}}</p>
+
+	<p><b>- Path de ejecución: </b>{{execPath}}</p>
+
+	<p><b>- Process id: </b>{{pid}}</p>
+
+	<p><b>- Carpeta corriente: </b>{{carp}}</p>
+</section>
+
 
 <script>
 	{{! setTimeout(() => { location.href = '/' },2000) }}
