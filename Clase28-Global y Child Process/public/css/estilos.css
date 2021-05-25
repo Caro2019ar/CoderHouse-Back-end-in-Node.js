@@ -27,3 +27,8 @@ nav a {
 .float-right {
 	padding-left: 400px;
 }
+
+section {
+	font-size: 10px;
+	display: block;
+}

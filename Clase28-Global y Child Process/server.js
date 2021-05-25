@@ -9,6 +9,8 @@ import Mensajes from "./api/mensajes.js";
 import { MongoDB } from "./db/db.js";
 import { getProdRandom } from "./generador/productos.js";
 import { Server as Socket } from "socket.io";
+
+import { fork } from "child_process";
 const app = express();
 const server = http.Server(app);
 const io = new Socket(server);
@@ -23,6 +25,35 @@ const FACEBOOK_CLIENT_ID = process.env.FACEBOOK_CLIENT_ID || "1377379292630106";
 const FACEBOOK_CLIENT_SECRET =
 	process.env.FACEBOOK_CLIENT_SECRET || "664cfd6f466959b6a865229fc476a428";
 const PORT = process.env.PORT || 8080;
+const CON_CHILD_PROCESS_FORK = !false;
+/* --------- RANDOMS ---------- */
+if (CON_CHILD_PROCESS_FORK) {
+	let calculo = fork("./computo.js");
+
+	var taskId = 0;
+	var tasks = {};
+
+	function addTask(data, callback) {
+		var id = taskId++;
+		calculo.send({ id: id, data: data });
+		tasks[id] = callback;
+	}
+
+	calculo.on("message", function (message) {
+		tasks[message.id](message);
+	});
+
+	app.get("/randoms", async (req, res) => {
+		// addTask(req.query.cant || 100000000, (randoms) => {
+		addTask(req.query.cant || 1000, (randoms) => {
+			res.json(randoms);
+		});
+	});
+} else {
+	app.get("/randoms", async (req, res) => {
+		res.send('<h2 style="color: orangered;">randoms -> no implementado!</h2>');
+	});
+}
 
 passport.use(
 	new FacebookStrategy(
@@ -133,29 +164,17 @@ app.get("/logout", (req, res) => {
 });
 
 app.get("/info", (req, res) => {
-	let plat = process.platform;
-	let ver = process.version;
-	let mem = JSON.stringify(process.memoryUsage());
-	let execPath = process.execPath;
-	let pid = process.pid;
-	let carp = process.cwd();
-	let procArgv = process.argv;
-	let argum = [];
-	process.argv.forEach((val, index) => {
-		argum.push(" [" + index + ": " + val + "] ");
-	});
+
 	res.render("info", {
-		plat,
-		ver,
-		mem,
-		execPath,
-		pid,
-		carp,
-		argum,
+		plat: process.platform,
+		ver: process.version,
+		mem: JSON.stringify(process.memoryUsage(), null, "\t"),
+		execPath: process.execPath,
+		pid: process.pid,
+		carp: process.cwd(),
+		argum: JSON.stringify(process.argv, null, "\t"),
 	});
 });
-
-
 
 /* -------------------------------------------------------- */
 /* -------------------------------------------------------- */
@@ -198,7 +217,7 @@ router.delete("/productos/borrar/:id", async (req, res) => {
 
 router.get("/productos/vista", async (req, res) => {
 	let prods = await productos.listarAll();
-
+	// console.log(prods, typeof prods);
 	res.render("vista", {
 		productos: prods,
 		hayProductos: prods.length,
@@ -210,7 +229,6 @@ router.get("/productos/vista-test", async (req, res) => {
 	let prods = [];
 	for (let i = 0; i < cant; i++) prods.push(getProdRandom(i + 1));
 
-	//console.log(prods)
 	res.render("vista", {
 		productos: prods,
 		hayProductos: prods.length,
