@@ -24,38 +24,9 @@ import { Strategy as FacebookStrategy } from "passport-facebook";
 let productos = new Productos();
 let mensajes = new Mensajes();
 
-const FACEBOOK_CLIENT_ID = process.env.FACEBOOK_CLIENT_ID || "1377379292630106";
-const FACEBOOK_CLIENT_SECRET =
-	process.env.FACEBOOK_CLIENT_SECRET || "664cfd6f466959b6a865229fc476a428";
+const FACEBOOK_CLIENT_ID = process.env.FACEBOOK_CLIENT_ID;
+const FACEBOOK_CLIENT_SECRET = process.env.FACEBOOK_CLIENT_SECRET;
 
-// /* --------- RANDOMS ---------- */
-// if (CON_CHILD_PROCESS_FORK) {
-// 	let calculo = fork("./computo.js");
-
-// 	var taskId = 0;
-// 	var tasks = {};
-
-// 	function addTask(data, callback) {
-// 		var id = taskId++;
-// 		calculo.send({ id: id, data: data });
-// 		tasks[id] = callback;
-// 	}
-
-// 	calculo.on("message", function (message) {
-// 		tasks[message.id](message);
-// 	});
-
-// 	app.get("/randoms", async (req, res) => {
-// 		// addTask(req.query.cant || 100000000, (randoms) => {
-// 		addTask(req.query.cant || 1000, (randoms) => {
-// 			res.json(randoms);
-// 		});
-// 	});
-// } else {
-// 	app.get("/randoms", async (req, res) => {
-// 		res.send('<h2 style="color: orangered;">randoms -> no implementado!</h2>');
-// 	});
-// }
 passport.use(
 	new FacebookStrategy(
 		{
@@ -66,9 +37,7 @@ passport.use(
 			scope: ["email"],
 		},
 		function (accessToken, refreshToken, profile, done) {
-			//console.log(profile)
 			let userProfile = profile;
-			//console.dir(userProfile, {depth: 4, colors: true})
 			return done(null, userProfile);
 		}
 	)
@@ -89,8 +58,8 @@ app.use(
 	session({
 		store: MongoStore.create({
 			mongoUrl:
-				"mongodb+srv://caro:12345699@cluster0.cwvci.mongodb.net/passport?retryWrites=true&w=majority",
-			//mongoOptions: { useNewUrlParser: true, useUnifiedTopology: true },
+				"mongodb+srv://<user>:<password>@cluster0.cwvci.mongodb.net/passport?retryWrites=true&w=majority",
+
 			ttl: 600,
 		}),
 		secret: "shhhhhhhhhhhhhhhhhhhhh",
@@ -284,7 +253,6 @@ if (process.argv[2] === "cluster" && cluster.isMaster) {
 				`Modo Fork - Servidor express escuchando en el puerto ${PORT} - PID WORKER ${process.pid}`
 			);
 	});
-	
 }
 
 /* ------------------------------------------------------- */
@@ -296,4 +264,3 @@ try {
 } catch (error) {
 	console.log(`Error en conexión de Base de datos: ${error}`);
 }
-
