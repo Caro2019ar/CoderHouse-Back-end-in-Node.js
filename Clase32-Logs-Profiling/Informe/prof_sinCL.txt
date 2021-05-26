@@ -1,0 +1,828 @@
+Statistical profiling result from prof_sin.log, (6824 ticks, 123 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+     25    0.4%          /usr/lib/system/libsystem_malloc.dylib
+     19    0.3%          /usr/lib/system/libsystem_pthread.dylib
+     12    0.2%          /usr/lib/system/libsystem_platform.dylib
+     12    0.2%          /usr/lib/libc++abi.dylib
+      2    0.0%          /usr/lib/system/libsystem_c.dylib
+      1    0.0%          /usr/lib/system/libsystem_m.dylib
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+     52    0.8%    0.8%  LazyCompile: *wrap /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:101:22
+     36    0.5%    0.5%  LazyCompile: *parse /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:269:30
+     32    0.5%    0.5%  LazyCompile: *resolve path.js:973:10
+     24    0.4%    0.4%  LazyCompile: *next /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:478:32
+     21    0.3%    0.3%  LazyCompile: *SourceNode_walk /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/source-map/lib/source-node.js:221:53
+     17    0.2%    0.3%  LazyCompile: *castChunk /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:52:19
+     15    0.2%    0.2%  LazyCompile: *readPackage internal/modules/cjs/loader.js:240:21
+     14    0.2%    0.2%  LazyCompile: *anonymous /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:12:42
+     14    0.2%    0.2%  LazyCompile: *Module._nodeModulePaths internal/modules/cjs/loader.js:575:37
+     11    0.2%    0.2%  LazyCompile: *nextTick internal/process/task_queues.js:101:18
+      9    0.1%    0.1%  LazyCompile: *normalizeString path.js:52:25
+      9    0.1%    0.1%  LazyCompile: *SourceNode_add /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/source-map/lib/source-node.js:172:51
+      8    0.1%    0.1%  LazyCompile: *generateList /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:143:38
+      6    0.1%    0.1%  LazyCompile: *hidden internal/errors.js:285:25
+      6    0.1%    0.1%  LazyCompile: *compile /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      6    0.1%    0.1%  LazyCompile: *<anonymous> /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/source-map/lib/source-node.js:174:29
+      4    0.1%    0.1%  LazyCompile: *render /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/express-handlebars/lib/express-handlebars.js:143:15
+      4    0.1%    0.1%  LazyCompile: *realpathSync fs.js:1650:22
+      4    0.1%    0.1%  LazyCompile: *quotedString /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:118:38
+      4    0.1%    0.1%  LazyCompile: *pushStackLiteral /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:877:46
+      4    0.1%    0.1%  LazyCompile: *dirname path.js:1127:10
+      4    0.1%    0.1%  LazyCompile: *ambiguousSexpr /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:248:42
+      4    0.1%    0.1%  LazyCompile: *<anonymous> /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:130:39
+      3    0.0%    0.0%  RegExp: ^(?:\{\{(~)?\^)
+      3    0.0%    0.0%  RegExp: [^\t\x20-\x7e\x80-\xff]
+      3    0.0%    0.0%  LazyCompile: *anonymous /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:549:49
+      3    0.0%    0.0%  LazyCompile: *accept /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/visitor.js:57:26
+      3    0.0%    0.0%  LazyCompile: *WhitespaceControl.Program /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/whitespace-control.js:19:48
+      2    0.0%    0.0%  RegExp: ^(?:\{\{(~)?\{)
+      2    0.0%    0.0%  RegExp: ^(?:\{\{(~)?#>)
+      2    0.0%    0.0%  RegExp: ^(?:\()
+      2    0.0%    0.0%  RegExp: ^(?:([^\s!"#%-,\.\/;->@\[-\^`\{-~]+(?=([=~}\s\/.)|])))) {1}
+      2    0.0%    0.0%  RegExp: \r?\n\s*?$ {1}
+      2    0.0%    0.0%  RegExp: -?-?~?\}\}$
+      2    0.0%    0.0%  RegExp: (?:\r\n?|\n).*
+      2    0.0%    0.0%  LazyCompile: *setupParams /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:1034:36
+      2    0.0%    0.0%  LazyCompile: *relative path.js:1052:11
+      2    0.0%    0.0%  LazyCompile: *opcode /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:347:26
+      2    0.0%    0.0%  LazyCompile: *invokeAmbiguous /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:699:44
+      2    0.0%    0.0%  LazyCompile: *extend /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/utils.js:28:16
+      2    0.0%    0.0%  LazyCompile: *emit events.js:263:44
+      2    0.0%    0.0%  LazyCompile: *basename path.js:1153:11
+      2    0.0%    0.0%  LazyCompile: *appendEscaped /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:416:40
+      2    0.0%    0.0%  LazyCompile: *_storeHeader _http_outgoing.js:360:22
+      2    0.0%    0.0%  LazyCompile: *PathExpression /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:289:42
+      2    0.0%    0.0%  LazyCompile: *ContentStatement /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:228:46
+      1    0.0%    0.0%  RegExp: ^text\/|^application\/(javascript|json)
+      1    0.0%    0.0%  RegExp: ^\{\{~?!-?-?
+      1    0.0%    0.0%  RegExp: ^\s*([^;\s]*)(?:;|\s|$)
+      1    0.0%    0.0%  RegExp: ^\/info\/?$
+      1    0.0%    0.0%  RegExp: ^\.|this\b
+      1    0.0%    0.0%  RegExp: ^[!#$%&'*+\-.^_`|~0-9A-Za-z]+$
+      1    0.0%    0.0%  RegExp: ^[!#$%&'*+.^_`|~0-9A-Za-z-]+\/[!#$%&'*+.^_`|~0-9A-Za-z-]+$
+      1    0.0%    0.0%  RegExp: ^(?:true(?=([~}\s)])))
+      1    0.0%    0.0%  RegExp: ^(?:as\s+\|)
+      1    0.0%    0.0%  RegExp: ^(?:\|)
+      1    0.0%    0.0%  RegExp: ^(?:\{\{\{\{)
+      1    0.0%    0.0%  RegExp: ^(?:\{\{(~)?\s*else\s*(~)?\}\})
+      1    0.0%    0.0%  RegExp: ^(?:\{\{(~)?\s*else\b)
+      1    0.0%    0.0%  RegExp: ^(?:\{\{(~)?\^\s*(~)?\}\}) {1}
+      1    0.0%    0.0%  RegExp: ^(?:\{\{(~)?\^\s*(~)?\}\})
+      1    0.0%    0.0%  RegExp: ^(?:\{\{(~)?\/)
+      1    0.0%    0.0%  RegExp: ^(?:\{\{(~)?\*?)
+      1    0.0%    0.0%  RegExp: ^(?:\{\{(~)?#>) {1}
+      1    0.0%    0.0%  RegExp: ^(?:\{\{(~)?!--)
+      1    0.0%    0.0%  RegExp: ^(?:\.\.)
+      1    0.0%    0.0%  RegExp: ^(?:\))
+      1    0.0%    0.0%  RegExp: ^(?:[^\x00]*?(?=(\{\{)))
+      1    0.0%    0.0%  RegExp: ^(?:[\s\S]*?--(~)?\}\})
+      1    0.0%    0.0%  RegExp: ^(?:[\/.])
+      1    0.0%    0.0%  RegExp: ^(?:@)
+      1    0.0%    0.0%  RegExp: ^(?:=)
+      1    0.0%    0.0%  RegExp: ^(?:([^\s!"#%-,\.\/;->@\[-\^`\{-~]+(?=([=~}\s\/.)|]))))
+      1    0.0%    0.0%  RegExp: \r?\n\s*?$
+      1    0.0%    0.0%  RegExp: \r?\n?
+      1    0.0%    0.0%  RegExp: [&<>"'`=] {1}
+      1    0.0%    0.0%  RegExp: [&<>"'`=]
+      1    0.0%    0.0%  RegExp: ; *([!#$%&'*+.^_`|~0-9A-Za-z-]+) *= *("(?:[\u000b\u0020\u0021\u0023-\u005b\u005d-\u007e\u0080-\u00ff]|\\[\u000b\u0020-\u00ff])*"|[!#$%&'*+.^_`|~0-9A-Za-z-]+) *
+      1    0.0%    0.0%  RegExp: (?:^|\/)\.?\.$
+      1    0.0%    0.0%  RegExp: (?:^|[\\/])\.\.(?:[\\/]|$)
+      1    0.0%    0.0%  LazyCompile: *template /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/runtime.js:52:18
+      1    0.0%    0.0%  LazyCompile: *splitRoot fs.js:1613:33
+      1    0.0%    0.0%  LazyCompile: *resolvePath /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:492:36
+      1    0.0%    0.0%  LazyCompile: *renderView /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/express-handlebars/lib/express-handlebars.js:176:19
+      1    0.0%    0.0%  LazyCompile: *readPackageScope internal/modules/cjs/loader.js:271:26
+      1    0.0%    0.0%  LazyCompile: *push /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:868:22
+      1    0.0%    0.0%  LazyCompile: *popStack /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:960:30
+      1    0.0%    0.0%  LazyCompile: *parse /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/vary/index.js:96:16
+      1    0.0%    0.0%  LazyCompile: *parse /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/minimatch/minimatch.js:271:16
+      1    0.0%    0.0%  LazyCompile: *extname path.js:1228:10
+      1    0.0%    0.0%  LazyCompile: *createNewLookupObject /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/internal/create-new-lookup-object.js:15:31
+      1    0.0%    0.0%  LazyCompile: *classifySexpr /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:363:40
+      1    0.0%    0.0%  LazyCompile: *appendToBuffer /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:42:42
+      1    0.0%    0.0%  LazyCompile: *accept /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:101:26
+      1    0.0%    0.0%  LazyCompile: *_addListener events.js:343:22
+      1    0.0%    0.0%  LazyCompile: *SourceNode_prepend /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/source-map/lib/source-node.js:197:59
+      1    0.0%    0.0%  LazyCompile: *SourceNode /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/source-map/lib/source-node.js:35:20
+      1    0.0%    0.0%  LazyCompile: *SourceLocation /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/helpers.js:32:24
+      1    0.0%    0.0%  LazyCompile: *Module._findPath internal/modules/cjs/loader.js:444:28
+      1    0.0%    0.0%  LazyCompile: *<anonymous> /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:274:31
+      1    0.0%    0.0%  LazyCompile: *<anonymous> /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:85:24
+
+ [C++]:
+   ticks  total  nonlib   name
+   3196   46.8%   47.3%  t __ZN2v88internal12_GLOBAL__N_123ScriptCompileTimerScopeD1Ev
+   1059   15.5%   15.7%  t node::fs::Read(v8::FunctionCallbackInfo<v8::Value> const&)
+    467    6.8%    6.9%  T node::contextify::ContextifyContext::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+    149    2.2%    2.2%  T _kpersona_info
+    112    1.6%    1.7%  t node::fs::InternalModuleReadJSON(v8::FunctionCallbackInfo<v8::Value> const&)
+    109    1.6%    1.6%  T _getaudit
+     83    1.2%    1.2%  T node::fs::Close(v8::FunctionCallbackInfo<v8::Value> const&)
+     67    1.0%    1.0%  T ___guarded_open_np
+     64    0.9%    0.9%  T void node::StreamBase::JSMethod<&(node::StreamBase::Writev(v8::FunctionCallbackInfo<v8::Value> const&))>(v8::FunctionCallbackInfo<v8::Value> const&)
+     63    0.9%    0.9%  T node::native_module::NativeModuleEnv::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+     60    0.9%    0.9%  t node::fs::Open(v8::FunctionCallbackInfo<v8::Value> const&)
+     48    0.7%    0.7%  t node::fs::InternalModuleStat(v8::FunctionCallbackInfo<v8::Value> const&)
+     40    0.6%    0.6%  t _szone_malloc_should_clear
+     39    0.6%    0.6%  t void node::Buffer::(anonymous namespace)::StringSlice<(node::encoding)1>(v8::FunctionCallbackInfo<v8::Value> const&)
+     39    0.6%    0.6%  T _mach_vm_purgable_control
+     38    0.6%    0.6%  t node::fs::Stat(v8::FunctionCallbackInfo<v8::Value> const&)
+     32    0.5%    0.5%  t __ZN2v88internal12StringHasher20HashSequentialStringIhEEjPKT_iy
+     30    0.4%    0.4%  t node::fs::FStat(v8::FunctionCallbackInfo<v8::Value> const&)
+     23    0.3%    0.3%  T _sendto$NOCANCEL
+     22    0.3%    0.3%  T __platform_memcmp
+     21    0.3%    0.3%  T node::fs::NewFSReqCallback(v8::FunctionCallbackInfo<v8::Value> const&)
+     16    0.2%    0.2%  t node::EnvGetter(v8::Local<v8::Name>, v8::PropertyCallbackInfo<v8::Value> const&)
+     14    0.2%    0.2%  T node::InternalCallbackScope::Close()
+     13    0.2%    0.2%  t node::MemoryUsage(v8::FunctionCallbackInfo<v8::Value> const&)
+     13    0.2%    0.2%  t _mvm_allocate_pages
+     11    0.2%    0.2%  t _update_cache_for_file_streams
+     11    0.2%    0.2%  t __ZN2v88internal14LookupIteratorC2EPNS0_7IsolateENS0_6HandleINS0_6ObjectEEENS4_INS0_4NameEEEmNS4_INS0_10JSReceiverEEENS1_13ConfigurationE
+     10    0.1%    0.1%  t __ZN2v88internalL24Builtin_Impl_ArrayConcatENS0_16BuiltinArgumentsEPNS0_7IsolateE
+     10    0.1%    0.1%  T _mach_error_type
+      8    0.1%    0.1%  t std::__1::basic_ostream<char, std::__1::char_traits<char> >& std::__1::__put_character_sequence<char, std::__1::char_traits<char> >(std::__1::basic_ostream<char, std::__1::char_traits<char> >&, char const*, unsigned long)
+      7    0.1%    0.1%  t __ZN2v88internal12StringHasher20HashSequentialStringItEEjPKT_iy
+      7    0.1%    0.1%  T node::crypto::Hash::New(v8::FunctionCallbackInfo<v8::Value> const&)
+      7    0.1%    0.1%  T _mach_vm_read
+      7    0.1%    0.1%  T _mach_msg_server_once
+      6    0.1%    0.1%  t __malloc_initialize
+      6    0.1%    0.1%  t __ZN2v88internalL26Builtin_Impl_HandleApiCallENS0_16BuiltinArgumentsEPNS0_7IsolateE
+      6    0.1%    0.1%  t __ZN2v88internal25FunctionCallbackArguments4CallENS0_15CallHandlerInfoE
+      6    0.1%    0.1%  T node::crypto::Hash::HashUpdate(v8::FunctionCallbackInfo<v8::Value> const&)
+      5    0.1%    0.1%  t node::Buffer::(anonymous namespace)::ByteLengthUtf8(v8::FunctionCallbackInfo<v8::Value> const&)
+      5    0.1%    0.1%  t _malloc_zone_register_while_locked
+      5    0.1%    0.1%  t _insert_node
+      5    0.1%    0.1%  t __ZN2v88internal12_GLOBAL__N_116Fast_ArrayConcatEPNS0_7IsolateEPNS0_16BuiltinArgumentsE
+      5    0.1%    0.1%  t __ZN2v88internal11StringShape33DispatchToSpecificTypeWithoutCastIZNS1_22DispatchToSpecificTypeIZNS0_6String3GetEiE19StringGetDispatchertJRiEEET0_S4_DpOT1_E17CastingDispatchertJRS4_S6_EEES7_SA_
+      5    0.1%    0.1%  T std::__1::basic_istream<wchar_t, std::__1::char_traits<wchar_t> >::getline(wchar_t*, long)
+      5    0.1%    0.1%  T node::fs::FSReqCallback::Resolve(v8::Local<v8::Value>)
+      5    0.1%    0.1%  T __ZNK2v85Array6LengthEv
+      5    0.1%    0.1%  T __ZN2v88internal25FunctionCallbackArgumentsC1EPNS0_7IsolateENS0_6ObjectENS0_10HeapObjectES4_S5_Pmi
+      5    0.1%    0.1%  T __ZN2v88internal21Builtin_JsonStringifyEiPmPNS0_7IsolateE
+      4    0.1%    0.1%  t node::fs::ReadDir(v8::FunctionCallbackInfo<v8::Value> const&)
+      4    0.1%    0.1%  t node::fs::LStat(v8::FunctionCallbackInfo<v8::Value> const&)
+      4    0.1%    0.1%  t node::AsyncHooks::pop_async_context(double)
+      4    0.1%    0.1%  t _mvm_allocate_pages_securely
+      4    0.1%    0.1%  t ___inaddr_to_index
+      4    0.1%    0.1%  t __ZN2v88internalL23Builtin_Impl_ArrayShiftENS0_16BuiltinArgumentsEPNS0_7IsolateE
+      4    0.1%    0.1%  t __ZN2v88internal9CopyCharsIhtEEvPT0_PKT_m
+      4    0.1%    0.1%  t __ZN2v88internal6Object13GetSimpleHashES1_
+      4    0.1%    0.1%  T node::fs::FSReqAfterScope::FSReqAfterScope(node::fs::FSReqBase*, uv_fs_s*)
+      4    0.1%    0.1%  T node::binding::GetInternalBinding(v8::FunctionCallbackInfo<v8::Value> const&)
+      4    0.1%    0.1%  T node::TTYWrap::New(v8::FunctionCallbackInfo<v8::Value> const&)
+      4    0.1%    0.1%  T node::TCPWrap::Connect(v8::FunctionCallbackInfo<v8::Value> const&)
+      4    0.1%    0.1%  T node::NodePlatform::MonotonicallyIncreasingTime()
+      3    0.0%    0.0%  t void node::Buffer::(anonymous namespace)::StringWrite<(node::encoding)1>(v8::FunctionCallbackInfo<v8::Value> const&)
+      3    0.0%    0.0%  t node::url::(anonymous namespace)::Parse(v8::FunctionCallbackInfo<v8::Value> const&)
+      3    0.0%    0.0%  t _tiny_malloc_from_free_list
+      3    0.0%    0.0%  t __platform_memmove$VARIANT$Base
+      3    0.0%    0.0%  t __ZN2v88internal17PrototypeIterator7AdvanceEv
+      3    0.0%    0.0%  T node::loader::ModuleWrap::New(v8::FunctionCallbackInfo<v8::Value> const&)
+      3    0.0%    0.0%  T node::fs::FSReqAfterScope::Clear()
+      3    0.0%    0.0%  T node::crypto::Hash::HashDigest(v8::FunctionCallbackInfo<v8::Value> const&)
+      3    0.0%    0.0%  T node::DTRACE_HTTP_SERVER_RESPONSE(v8::FunctionCallbackInfo<v8::Value> const&)
+      3    0.0%    0.0%  T node::AsyncWrap::EmitTraceEventBefore()
+      3    0.0%    0.0%  T ___malloc_init
+      3    0.0%    0.0%  T __ZN2v88internal9Accessors16ErrorStackGetterENS_5LocalINS_4NameEEERKNS_20PropertyCallbackInfoINS_5ValueEEE
+      3    0.0%    0.0%  T __ZN2v88internal8Builtins14builtin_handleEi
+      3    0.0%    0.0%  T __ZN2v88Function4CallENS_5LocalINS_7ContextEEENS1_INS_5ValueEEEiPS5_
+      3    0.0%    0.0%  T __ZN2v820EscapableHandleScopeC2EPNS_7IsolateE
+      3    0.0%    0.0%  T __ZN2v811HandleScopeD1Ev
+      2    0.0%    0.0%  t std::__1::ostreambuf_iterator<char, std::__1::char_traits<char> > std::__1::__pad_and_output<char, std::__1::char_traits<char> >(std::__1::ostreambuf_iterator<char, std::__1::char_traits<char> >, char const*, char const*, char const*, std::__1::ios_base&, char)
+      2    0.0%    0.0%  t std::__1::__shared_ptr_pointer<auto node::options_parser::OptionsParser<node::EnvironmentOptions>::Convert<node::options_parser::OptionsParser<node::DebugOptions>::BaseOptionField, node::DebugOptions>(std::__1::shared_ptr<node::options_parser::OptionsParser<node::DebugOptions>::BaseOptionField>, node::DebugOptions* (node::EnvironmentOptions::*)())::AdaptedField*, std::__1::default_delete<auto node::options_parser::OptionsParser<node::EnvironmentOptions>::Convert<node::options_parser::OptionsParser<node::DebugOptions>::BaseOptionField, node::DebugOptions>(std::__1::shared_ptr<node::options_parser::OptionsParser<node::DebugOptions>::BaseOptionField>, node::DebugOptions* (node::EnvironmentOptions::*)())::AdaptedField*>, std::__1::allocator<auto node::options_parser::OptionsParser<node::EnvironmentOptions>::Convert<node::options_parser::OptionsParser<node::DebugOptions>::BaseOptionField, node::DebugOptions>(std::__1::shared_ptr<node::options_parser::OptionsParser<node::DebugOptions>::BaseOptionField>, node::DebugOptions* (node::EnvironmentOptions::*)())::AdaptedField*> >::__on_zero_shared_weak()
+      2    0.0%    0.0%  t std::__1::__hash_iterator<std::__1::__hash_node<node::CleanupHookCallback, void*>*> std::__1::__hash_table<node::CleanupHookCallback, node::CleanupHookCallback::Hash, node::CleanupHookCallback::Equal, std::__1::allocator<node::CleanupHookCallback> >::find<node::CleanupHookCallback>(node::CleanupHookCallback const&)
+      2    0.0%    0.0%  t node::i18n::ToASCII(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.0%    0.0%  t _szone_batch_free
+      2    0.0%    0.0%  t __ZN2v8L15InternalFieldOKENS_8internal6HandleINS0_10JSReceiverEEEiPKc
+      2    0.0%    0.0%  t __ZN2v88internal12_GLOBAL__N_121CreateDynamicFunctionEPNS0_7IsolateENS0_16BuiltinArgumentsEPKc
+      2    0.0%    0.0%  t __ZN2v88internal12_GLOBAL__N_119HandleApiCallHelperILb0EEENS0_11MaybeHandleINS0_6ObjectEEEPNS0_7IsolateENS0_6HandleINS0_10HeapObjectEEESA_NS8_INS0_20FunctionTemplateInfoEEENS8_IS4_EENS0_16BuiltinArgumentsE
+      2    0.0%    0.0%  T std::__1::num_get<wchar_t, std::__1::istreambuf_iterator<wchar_t, std::__1::char_traits<wchar_t> > >::do_get(std::__1::istreambuf_iterator<wchar_t, std::__1::char_traits<wchar_t> >, std::__1::istreambuf_iterator<wchar_t, std::__1::char_traits<wchar_t> >, std::__1::ios_base&, unsigned int&, void*&) const
+      2    0.0%    0.0%  T node::tracing::TraceEventHelper::GetTracingController()
+      2    0.0%    0.0%  T node::fs::Access(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.0%    0.0%  T node::AsyncWrap::EmitTraceEventDestroy()
+      2    0.0%    0.0%  T node::AsyncWrap::EmitTraceEventAfter(node::AsyncWrap::ProviderType, double)
+      2    0.0%    0.0%  T _vm_read
+      2    0.0%    0.0%  T _vm_allocate
+      2    0.0%    0.0%  T _thread_get_exception_ports
+      2    0.0%    0.0%  T _pipe
+      2    0.0%    0.0%  T _freopen
+      2    0.0%    0.0%  T ___fread
+      2    0.0%    0.0%  T __ZNK2v85Value10IsFunctionEv
+      2    0.0%    0.0%  T __ZN2v88internal8Compiler19GetFunctionFromEvalENS0_6HandleINS0_6StringEEENS2_INS0_18SharedFunctionInfoEEENS2_INS0_7ContextEEENS0_12LanguageModeENS0_16ParseRestrictionEiii
+      2    0.0%    0.0%  T __ZN2v88internal19Builtin_ArrayConcatEiPmPNS0_7IsolateE
+      2    0.0%    0.0%  T __ZN2v87Integer3NewEPNS_7IsolateEi
+      2    0.0%    0.0%  T __ZN2v86Object3GetENS_5LocalINS_7ContextEEEj
+      1    0.0%    0.0%  t void std::__1::__tree_remove<std::__1::__tree_node_base<void*>*>(std::__1::__tree_node_base<void*>*, std::__1::__tree_node_base<void*>*)
+      1    0.0%    0.0%  t void node::MakeUtf8String<char>(v8::Isolate*, v8::Local<v8::Value>, node::MaybeStackBuffer<char, 1024ul>*)
+      1    0.0%    0.0%  t unsigned long std::__1::__hash_table<node::CleanupHookCallback, node::CleanupHookCallback::Hash, node::CleanupHookCallback::Equal, std::__1::allocator<node::CleanupHookCallback> >::__erase_unique<node::CleanupHookCallback>(node::CleanupHookCallback const&)
+      1    0.0%    0.0%  t std::__1::vector<v8::Global<v8::Object>, std::__1::allocator<v8::Global<v8::Object> > >::__append(unsigned long)
+      1    0.0%    0.0%  t node::task_queue::RunMicrotasks(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  t node::os::GetCPUInfo(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  t node::fs::WriteString(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  t node::fs::FillGlobalStatsArray(node::fs::BindingData*, bool, uv_stat_t const*, bool)
+      1    0.0%    0.0%  t node::cares_wrap::(anonymous namespace)::ChannelWrap::New(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  t node::LibuvStreamWrap::Initialize(v8::Local<v8::Object>, v8::Local<v8::Value>, v8::Local<v8::Context>, void*)::$_0::__invoke(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  t node::Hrtime(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  t node::BaseObject::~BaseObject()
+      1    0.0%    0.0%  t node::AsyncHooks::push_async_context(double, double, v8::Local<v8::Object>)
+      1    0.0%    0.0%  t node::(anonymous namespace)::Parser::Proxy<int (node::(anonymous namespace)::Parser::*)(char const*, unsigned long), &(node::(anonymous namespace)::Parser::on_header_field(char const*, unsigned long))>::Raw(llhttp__internal_s*, char const*, unsigned long)
+      1    0.0%    0.0%  t node::(anonymous namespace)::Parser::New(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  t node::(anonymous namespace)::Parser::Execute(char const*, unsigned long)
+      1    0.0%    0.0%  t node::(anonymous namespace)::GetLibuvNow(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  t __platform_memset$VARIANT$Ivybridge
+      1    0.0%    0.0%  t ___vfwscanf
+      1    0.0%    0.0%  t ___vfprintf
+      1    0.0%    0.0%  t ___printf_pad
+      1    0.0%    0.0%  t __ZNSt3__16vectorIPN2v88internal8compiler4NodeENS2_13ZoneAllocatorIS5_EEE8__appendEm
+      1    0.0%    0.0%  t __ZN2v88internalL35Builtin_Impl_ArrayBufferConstructorENS0_16BuiltinArgumentsEPNS0_7IsolateE
+      1    0.0%    0.0%  t __ZN2v88internalL21Builtin_Impl_ArrayPopENS0_16BuiltinArgumentsEPNS0_7IsolateE
+      1    0.0%    0.0%  t __ZN2v88internal7JSArray10SetContentENS0_6HandleIS1_EENS2_INS0_14FixedArrayBaseEEE
+      1    0.0%    0.0%  t __ZN2v88internal6String7FlattenEPNS0_7IsolateENS0_6HandleIS1_EENS0_14AllocationTypeE
+      1    0.0%    0.0%  t __ZN2v88internal22HandleScopeImplementer12EnterContextENS0_7ContextE
+      1    0.0%    0.0%  t __ZN2v88internal19SequentialStringKeyIhE7IsMatchENS0_6StringE
+      1    0.0%    0.0%  t __ZN2v88internal15ItemParallelJob7AddItemEPNS1_4ItemE
+      1    0.0%    0.0%  t __ZN2v88internal12_GLOBAL__N_124ProbeInstantiationsCacheEPNS0_7IsolateENS0_6HandleINS0_13NativeContextEEEiNS1_11CachingModeE
+      1    0.0%    0.0%  t __ZN2v88internal12_GLOBAL__N_122LogFunctionCompilationENS0_17CodeEventListener16LogEventsAndTagsENS0_6HandleINS0_18SharedFunctionInfoEEENS4_INS0_6ScriptEEENS4_INS0_12AbstractCodeEEEbdPNS0_7IsolateE
+      1    0.0%    0.0%  t __ZN2v88internal12_GLOBAL__N_117InstantiateObjectEPNS0_7IsolateENS0_6HandleINS0_18ObjectTemplateInfoEEENS4_INS0_10JSReceiverEEEb
+      1    0.0%    0.0%  t __ZN2v88internal12_GLOBAL__N_115ConstructBufferEPNS0_7IsolateENS0_6HandleINS0_10JSFunctionEEENS4_INS0_10JSReceiverEEENS4_INS0_6ObjectEEENS0_15InitializedFlagE
+      1    0.0%    0.0%  t __ZN2v84base19TemplateHashMapImplIPvS2_NS0_26HashEqualityThenKeyMatcherIS2_PFbS2_S2_EEENS0_23DefaultAllocationPolicyEE6ResizeES7_
+      1    0.0%    0.0%  t __ZN2v812_GLOBAL__N_114CallDepthScopeILb1EEC1EPNS_8internal7IsolateENS_5LocalINS_7ContextEEE
+      1    0.0%    0.0%  t __ZN2v812_GLOBAL__N_114CallDepthScopeILb0EEC1EPNS_8internal7IsolateENS_5LocalINS_7ContextEEE
+      1    0.0%    0.0%  t __GB2312_init
+      1    0.0%    0.0%  T std::__1::basic_streambuf<char, std::__1::char_traits<char> >::swap(std::__1::basic_streambuf<char, std::__1::char_traits<char> >&)
+      1    0.0%    0.0%  T std::__1::basic_istream<wchar_t, std::__1::char_traits<wchar_t> >::readsome(wchar_t*, long)
+      1    0.0%    0.0%  T std::__1::__num_get<wchar_t>::__stage2_int_loop(wchar_t, int, char*, char*&, unsigned int&, wchar_t, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, unsigned int*, unsigned int*&, wchar_t*)
+      1    0.0%    0.0%  T node::loader::ModuleWrap::SetSyntheticExport(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  T node::loader::ModuleWrap::Evaluate(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  T node::fs::FSReqCallback::Reject(v8::Local<v8::Value>)
+      1    0.0%    0.0%  T node::fs::FSReqBase::~FSReqBase()
+      1    0.0%    0.0%  T node::fs::AfterInteger(uv_fs_s*)
+      1    0.0%    0.0%  T node::errors::TryCatchScope::~TryCatchScope()
+      1    0.0%    0.0%  T node::UVException(v8::Isolate*, int, char const*, char const*, char const*, char const*)
+      1    0.0%    0.0%  T node::PerIsolatePlatformData::FlushForegroundTasksInternal()
+      1    0.0%    0.0%  T node::InternalCallbackScope::InternalCallbackScope(node::Environment*, v8::Local<v8::Object>, node::async_context const&, int)
+      1    0.0%    0.0%  T node::HandleWrap::Close(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  T node::Environment::RunAndClearNativeImmediates(bool)
+      1    0.0%    0.0%  T node::BaseObject::MakeWeak()::'lambda'(v8::WeakCallbackInfo<node::BaseObject> const&)::__invoke(v8::WeakCallbackInfo<node::BaseObject> const&)
+      1    0.0%    0.0%  T node::AsyncWrap::~AsyncWrap()
+      1    0.0%    0.0%  T node::AsyncWrap::MakeCallback(v8::Local<v8::Function>, int, v8::Local<v8::Value>*)
+      1    0.0%    0.0%  T node::AsyncWrap::GetAsyncId(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  T node::AsyncWrap::EmitDestroy(node::Environment*, double)
+      1    0.0%    0.0%  T _voucher_copy
+      1    0.0%    0.0%  T _szone_error
+      1    0.0%    0.0%  T _swscanf_l
+      1    0.0%    0.0%  T _pthread_rwlock_init
+      1    0.0%    0.0%  T _pthread_mutex_destroy
+      1    0.0%    0.0%  T _fputwc_l
+      1    0.0%    0.0%  T _fputwc
+      1    0.0%    0.0%  T __pthread_exit_if_canceled
+      1    0.0%    0.0%  T __platform_bzero
+      1    0.0%    0.0%  T __kernelrpc_vm_remap
+      1    0.0%    0.0%  T ___sflush
+      1    0.0%    0.0%  T ___rec_open
+      1    0.0%    0.0%  T ___mach_stack_logging_get_frames_for_stackid
+      1    0.0%    0.0%  T ___identitysvc
+      1    0.0%    0.0%  T ___gethostuuid
+      1    0.0%    0.0%  T ___getdirentries64
+      1    0.0%    0.0%  T __ZNK2v88internal12AstRawString12AsArrayIndexEPj
+      1    0.0%    0.0%  T __ZNK2v86String9WriteUtf8EPNS_7IsolateEPciPii
+      1    0.0%    0.0%  T __ZNK2v85Value8ToObjectENS_5LocalINS_7ContextEEE
+      1    0.0%    0.0%  T __ZNK2v85Value8IsObjectEv
+      1    0.0%    0.0%  T __ZN2v88internal9Accessors25BoundFunctionLengthGetterENS_5LocalINS_4NameEEERKNS_20PropertyCallbackInfoINS_5ValueEEE
+      1    0.0%    0.0%  T __ZN2v88internal9Accessors23FunctionPrototypeGetterENS_5LocalINS_4NameEEERKNS_20PropertyCallbackInfoINS_5ValueEEE
+      1    0.0%    0.0%  T __ZN2v88internal8Compiler30GetFunctionFromValidatedStringENS0_6HandleINS0_7ContextEEENS0_11MaybeHandleINS0_6StringEEENS0_16ParseRestrictionEi
+      1    0.0%    0.0%  T __ZN2v88internal8Builtins4nameEi
+      1    0.0%    0.0%  T __ZN2v88internal5Scope9ResolveToEPNS0_13VariableProxyEPNS0_8VariableE
+      1    0.0%    0.0%  T __ZN2v88internal5Scope18FinalizeBlockScopeEv
+      1    0.0%    0.0%  T __ZN2v88internal5Scope18AsDeclarationScopeEv
+      1    0.0%    0.0%  T __ZN2v88internal20CompilationCacheEval6LookupENS0_6HandleINS0_6StringEEENS2_INS0_18SharedFunctionInfoEEENS2_INS0_7ContextEEENS0_12LanguageModeEi
+      1    0.0%    0.0%  T __ZN2v88internal20Builtin_ArrayUnshiftEiPmPNS0_7IsolateE
+      1    0.0%    0.0%  T __ZN2v88internal18Builtin_ArrayShiftEiPmPNS0_7IsolateE
+      1    0.0%    0.0%  T __ZN2v88internal16AssemblerOptions7DefaultEPNS0_7IsolateE
+      1    0.0%    0.0%  T __ZN2v88internal15AstValueFactory13NewConsStringEPKNS0_12AstRawStringE
+      1    0.0%    0.0%  T __ZN2v88internal15AstValueFactory11InternalizeINS0_7IsolateEEEvPT_
+      1    0.0%    0.0%  T __ZN2v88internal13VariableProxy6BindToEPNS0_8VariableE
+      1    0.0%    0.0%  T __ZN2v88internal12AstRawString7CompareEPvS2_
+      1    0.0%    0.0%  T __ZN2v87Context4ExitEv
+      1    0.0%    0.0%  T __ZN2v87Context29GetNumberOfEmbedderDataFieldsEv
+      1    0.0%    0.0%  T __ZN2v86Object3GetENS_5LocalINS_7ContextEEENS1_INS_5ValueEEE
+      1    0.0%    0.0%  T __ZN2v86Object32SetAlignedPointerInInternalFieldEiPv
+      1    0.0%    0.0%  T __ZN2v85Array3NewEPNS_7IsolateEPNS_5LocalINS_5ValueEEEm
+      1    0.0%    0.0%  T __ZN2v82V813DisposeGlobalEPm
+      1    0.0%    0.0%  T __ZN2v820EscapableHandleScope6EscapeEPm
+      1    0.0%    0.0%  T __ZN2v811HandleScopeC1EPNS_7IsolateE
+
+ [Summary]:
+   ticks  total  nonlib   name
+    414    6.1%    6.1%  JavaScript
+   6216   91.1%   92.0%  C++
+    444    6.5%    6.6%  GC
+     71    1.0%          Shared libraries
+    123    1.8%          Unaccounted
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+   2957   54.9%   43.3%  t __ZN2v88internal12_GLOBAL__N_123ScriptCompileTimerScopeD1Ev
+   2197   40.8%   32.2%  T __ZN2v88internal21Builtin_HandleApiCallEiPmPNS0_7IsolateE
+     73    1.4%    1.1%  T __ZN2v88internal21Builtin_JsonStringifyEiPmPNS0_7IsolateE
+     42    0.8%    0.6%  T __ZN2v88internal19Builtin_ArrayConcatEiPmPNS0_7IsolateE
+     23    0.4%    0.3%  T _sendto$NOCANCEL
+     14    0.3%    0.2%  T __ZN2v88internal17Builtin_JsonParseEiPmPNS0_7IsolateE
+     13    0.2%    0.2%  T __ZN2v88internal27Builtin_FunctionConstructorEiPmPNS0_7IsolateE
+     12    0.2%    0.2%  T __ZN2v88internal20Builtin_ArrayUnshiftEiPmPNS0_7IsolateE
+      7    0.1%    0.1%  T _mach_vm_read
+      7    0.1%    0.1%  T __ZN2v88internal34Builtin_StringPrototypeLastIndexOfEiPmPNS0_7IsolateE
+      5    0.1%    0.1%  T __ZN2v88internal18Builtin_ArrayShiftEiPmPNS0_7IsolateE
+      5    0.1%    0.1%  T __ZN2v88internal16Builtin_ArrayPopEiPmPNS0_7IsolateE
+      2    0.0%    0.0%  T _pipe
+      2    0.0%    0.0%  T __ZN2v88internal32Builtin_GlobalDecodeURIComponentEiPmPNS0_7IsolateE
+      2    0.0%    0.0%  T __ZN2v88internal30Builtin_ErrorCaptureStackTraceEiPmPNS0_7IsolateE
+      2    0.0%    0.0%  T __ZN2v88internal24Builtin_ErrorConstructorEiPmPNS0_7IsolateE
+      2    0.0%    0.0%  T __ZN2v88internal23Builtin_DateConstructorEiPmPNS0_7IsolateE
+      2    0.0%    0.0%  T __ZN2v88internal18Builtin_ObjectSealEiPmPNS0_7IsolateE
+      1    0.0%    0.0%  t void node::MakeUtf8String<char>(v8::Isolate*, v8::Local<v8::Value>, node::MaybeStackBuffer<char, 1024ul>*)
+      1    0.0%    0.0%  t node::fs::Open(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  t node::fs::LStat(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  t node::fs::InternalModuleStat(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  t node::fs::FillGlobalStatsArray(node::fs::BindingData*, bool, uv_stat_t const*, bool)
+      1    0.0%    0.0%  t node::fs::FStat(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  t __ZN2v88internal12StringHasher20HashSequentialStringIhEEjPKT_iy
+      1    0.0%    0.0%  t __ZN2v88internal11StringShape33DispatchToSpecificTypeWithoutCastIZNS1_22DispatchToSpecificTypeIZNS0_6String3GetEiE19StringGetDispatchertJRiEEET0_S4_DpOT1_E17CastingDispatchertJRS4_S6_EEES7_SA_
+      1    0.0%    0.0%  T node::tracing::TraceEventHelper::GetTracingController()
+      1    0.0%    0.0%  T node::loader::ModuleWrap::SetSyntheticExport(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  T _mach_vm_purgable_control
+      1    0.0%    0.0%  T _mach_msg_server_once
+      1    0.0%    0.0%  T __ZNK2v86String9WriteUtf8EPNS_7IsolateEPciPii
+      1    0.0%    0.0%  T __ZNK2v85Value8IsObjectEv
+      1    0.0%    0.0%  T __ZN2v88internal9Accessors25BoundFunctionLengthGetterENS_5LocalINS_4NameEEERKNS_20PropertyCallbackInfoINS_5ValueEEE
+      1    0.0%    0.0%  T __ZN2v88internal38Builtin_StringPrototypeToUpperCaseIntlEiPmPNS0_7IsolateE
+      1    0.0%    0.0%  T __ZN2v88internal20Builtin_ObjectFreezeEiPmPNS0_7IsolateE
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+   3196   46.8%  t __ZN2v88internal12_GLOBAL__N_123ScriptCompileTimerScopeD1Ev
+   1050   32.9%    t __ZN2v88internal12_GLOBAL__N_123ScriptCompileTimerScopeD1Ev
+    108   10.3%      t __ZN2v88internal12_GLOBAL__N_123ScriptCompileTimerScopeD1Ev
+     13   12.0%        LazyCompile: ~readPackage internal/modules/cjs/loader.js:240:21
+     12   92.3%          LazyCompile: ~readPackageScope internal/modules/cjs/loader.js:271:26
+      7   58.3%            LazyCompile: ~trySelf internal/modules/cjs/loader.js:391:17
+      5   41.7%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1072:37
+      1    7.7%          LazyCompile: ~tryPackage internal/modules/cjs/loader.js:288:20
+      1  100.0%            LazyCompile: ~Module._findPath internal/modules/cjs/loader.js:444:28
+      9    8.3%        LazyCompile: ~escapeExpression /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/utils.js:77:26
+      8   88.9%          Eval: ~<anonymous> :1:20
+      8  100.0%            LazyCompile: ~main /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/runtime.js:207:18
+      1   11.1%          LazyCompile: *<anonymous> :1:20
+      1  100.0%            LazyCompile: ~main /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/runtime.js:207:18
+      7    6.5%        LazyCompile: *compile /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      4   57.1%          LazyCompile: *render /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/express-handlebars/lib/express-handlebars.js:143:15
+      4  100.0%            t __ZN2v88internal12_GLOBAL__N_123ScriptCompileTimerScopeD1Ev
+      3   42.9%          LazyCompile: ~compileInput /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:507:24
+      3  100.0%            LazyCompile: ~ret /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:515:15
+      6    5.6%        LazyCompile: ~next /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:478:32
+      6  100.0%          LazyCompile: ~lex /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:525:30
+      5   83.3%            LazyCompile: ~lex /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:295:25
+      1   16.7%            LazyCompile: ~lex /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:525:30
+      6    5.6%        LazyCompile: *quotedString /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:118:38
+      6  100.0%          LazyCompile: ~pushSource /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:881:34
+      4   66.7%            LazyCompile: ~appendEscaped /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:416:40
+      2   33.3%            LazyCompile: ~append /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:394:26
+      5    4.6%        LazyCompile: *realpathSync fs.js:1650:22
+      5  100.0%          LazyCompile: ~toRealPath internal/modules/cjs/loader.js:343:20
+      5  100.0%            LazyCompile: ~tryFile internal/modules/cjs/loader.js:334:17
+      4    3.7%        LazyCompile: *pushSource /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:881:34
+      4  100.0%          LazyCompile: ~append /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:394:26
+      4  100.0%            LazyCompile: *compile /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      4    3.7%        LazyCompile: *next /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:478:32
+      3   75.0%          LazyCompile: ~lex /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:525:30
+      3  100.0%            LazyCompile: ~lex /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:525:30
+      1   25.0%          LazyCompile: *parse /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:269:30
+      1  100.0%            LazyCompile: ~parseWithoutProcessing /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/base.js:33:32
+      3    2.8%        LazyCompile: ~pipe /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/send/index.js:510:43
+      3  100.0%          LazyCompile: ~serveStatic /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/serve-static/index.js:72:31
+      3  100.0%            LazyCompile: ~handle /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/express/lib/router/layer.js:86:49
+      3    2.8%        LazyCompile: ~parseAcceptEncoding /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/negotiator/lib/encoding.js:31:29
+      3  100.0%          LazyCompile: ~preferredEncodings /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/negotiator/lib/encoding.js:138:28
+      3  100.0%            LazyCompile: ~encodings /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/negotiator/index.js:55:52
+      3    2.8%        LazyCompile: ~normalize path.js:1004:12
+      3  100.0%          LazyCompile: ~join path.js:1033:7
+      2   66.7%            LazyCompile: ~renderView /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/express-handlebars/lib/express-handlebars.js:176:19
+      1   33.3%            LazyCompile: ~resolve /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/express/lib/view.js:146:42
+      3    2.8%        LazyCompile: ~mergeSource /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:267:36
+      2   66.7%          LazyCompile: ~createFunctionContext /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:216:56
+      2  100.0%            LazyCompile: ~compile /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      1   33.3%          LazyCompile: *compile /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      1  100.0%            LazyCompile: *render /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/express-handlebars/lib/express-handlebars.js:143:15
+      3    2.8%        LazyCompile: ~header /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/express/lib/response.js:754:29
+      2   66.7%          LazyCompile: ~contentType /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/express/lib/response.js:594:32
+      2  100.0%            LazyCompile: ~send /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/express/lib/response.js:107:25
+      1   33.3%          LazyCompile: ~send /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/express/lib/response.js:107:25
+      1  100.0%            LazyCompile: ~done /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/express/lib/response.js:1006:27
+      3    2.8%        LazyCompile: ~checkInvalidHeaderChar _http_common.js:230:32
+      3  100.0%          LazyCompile: ~<anonymous> _http_outgoing.js:546:45
+      3  100.0%            LazyCompile: *hidden internal/errors.js:285:25
+      3    2.8%        LazyCompile: ~<anonymous> /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/mongoose-legacy-pluralize/index.js:87:34
+      3  100.0%          t __ZN2v88internal12_GLOBAL__N_123ScriptCompileTimerScopeD1Ev
+      3  100.0%            LazyCompile: ~pluralize /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/mongoose-legacy-pluralize/index.js:83:19
+      2    1.9%        LazyCompile: ~wrapSafe internal/modules/cjs/loader.js:964:18
+      2  100.0%          LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1017:37
+      2  100.0%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1072:37
+      2    1.9%        LazyCompile: ~stat internal/modules/cjs/loader.js:132:14
+      2  100.0%          LazyCompile: ~Module._findPath internal/modules/cjs/loader.js:444:28
+      2  100.0%            LazyCompile: ~Module._resolveFilename internal/modules/cjs/loader.js:796:35
+      2    1.9%        LazyCompile: ~realpathSync fs.js:1650:22
+      2  100.0%          LazyCompile: ~toRealPath internal/modules/cjs/loader.js:343:20
+      2  100.0%            LazyCompile: ~tryFile internal/modules/cjs/loader.js:334:17
+      2    1.9%        LazyCompile: ~createError /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/http-errors/index.js:48:22
+      2  100.0%          LazyCompile: ~error /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/send/index.js:267:45
+      2  100.0%            LazyCompile: ~onStatError /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/send/index.js:416:57
+      2    1.9%        LazyCompile: ~Module.load internal/modules/cjs/loader.js:916:33
+      2  100.0%          LazyCompile: ~Module._load internal/modules/cjs/loader.js:704:24
+      2  100.0%            LazyCompile: ~Module.require internal/modules/cjs/loader.js:944:36
+      2    1.9%        LazyCompile: *appendEscaped /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:416:40
+      2  100.0%          LazyCompile: *compile /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      2  100.0%            LazyCompile: *render /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/express-handlebars/lib/express-handlebars.js:143:15
+      2    1.9%        LazyCompile: *Module._findPath internal/modules/cjs/loader.js:444:28
+      2  100.0%          LazyCompile: ~Module._resolveFilename internal/modules/cjs/loader.js:796:35
+      2  100.0%            LazyCompile: *Module._load internal/modules/cjs/loader.js:704:24
+     42    4.0%      LazyCompile: *SourceNode_walk /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/source-map/lib/source-node.js:221:53
+     37   88.1%        LazyCompile: *SourceNode_walk /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/source-map/lib/source-node.js:221:53
+     33   89.2%          LazyCompile: *SourceNode_walk /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/source-map/lib/source-node.js:221:53
+     32   97.0%            LazyCompile: *SourceNode_walk /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/source-map/lib/source-node.js:221:53
+      1    3.0%            LazyCompile: ~SourceNode_toString /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/source-map/lib/source-node.js:318:61
+      4   10.8%          LazyCompile: ~SourceNode_toString /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/source-map/lib/source-node.js:318:61
+      4  100.0%            t __ZN2v88internal12_GLOBAL__N_123ScriptCompileTimerScopeD1Ev
+      5   11.9%        LazyCompile: ~SourceNode_toString /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/source-map/lib/source-node.js:318:61
+      5  100.0%          t __ZN2v88internal12_GLOBAL__N_123ScriptCompileTimerScopeD1Ev
+      3   60.0%            LazyCompile: ~createFunctionContext /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:216:56
+      2   40.0%            LazyCompile: *compile /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+     36    3.4%      LazyCompile: *next /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:478:32
+     32   88.9%        LazyCompile: *parse /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:269:30
+     31   96.9%          LazyCompile: ~parseWithoutProcessing /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/base.js:33:32
+     18   58.1%            LazyCompile: *render /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/express-handlebars/lib/express-handlebars.js:143:15
+     13   41.9%            LazyCompile: ~parse /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/base.js:51:15
+      1    3.1%          LazyCompile: *parseWithoutProcessing /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/base.js:33:32
+      1  100.0%            LazyCompile: *render /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/express-handlebars/lib/express-handlebars.js:143:15
+      4   11.1%        LazyCompile: ~lex /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:525:30
+      4  100.0%          LazyCompile: *parse /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:269:30
+      4  100.0%            LazyCompile: ~parseWithoutProcessing /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/base.js:33:32
+     21    2.0%      LazyCompile: *wrap /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:101:22
+      3   14.3%        LazyCompile: *replaceStack /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:892:38
+      2   66.7%          LazyCompile: ~append /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:394:26
+      2  100.0%            LazyCompile: *compile /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      1   33.3%          LazyCompile: ~resolvePath /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:492:36
+      1  100.0%            LazyCompile: ~lookupOnContext /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:448:44
+      3   14.3%        LazyCompile: *push /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:868:22
+      3  100.0%          LazyCompile: ~replaceStack /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:892:38
+      3  100.0%            LazyCompile: ~resolvePath /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:492:36
+      3   14.3%        LazyCompile: *invokeAmbiguous /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:699:44
+      3  100.0%          LazyCompile: *compile /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      2   66.7%            LazyCompile: *render /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/express-handlebars/lib/express-handlebars.js:143:15
+      1   33.3%            LazyCompile: ~compileInput /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:507:24
+      3   14.3%        LazyCompile: *compile /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      3  100.0%          LazyCompile: *render /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/express-handlebars/lib/express-handlebars.js:143:15
+      3  100.0%            t __ZN2v88internal12_GLOBAL__N_123ScriptCompileTimerScopeD1Ev
+      2    9.5%        LazyCompile: ~push /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:868:22
+      1   50.0%          LazyCompile: ~replaceStack /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:892:38
+      1  100.0%            LazyCompile: ~append /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:394:26
+      1   50.0%          LazyCompile: ~invokeAmbiguous /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:699:44
+      1  100.0%            LazyCompile: ~compile /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      2    9.5%        LazyCompile: ~appendToBuffer /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:42:42
+      2  100.0%          LazyCompile: ~pushSource /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:881:34
+      2  100.0%            LazyCompile: ~appendEscaped /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:416:40
+      1    4.8%        LazyCompile: ~functionCall /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:113:38
+      1  100.0%          LazyCompile: ~invokeAmbiguous /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:699:44
+      1  100.0%            LazyCompile: *compile /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      1    4.8%        LazyCompile: ~aliasable /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:1006:32
+      1  100.0%          LazyCompile: ~invokeAmbiguous /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:699:44
+      1  100.0%            LazyCompile: ~compile /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      1    4.8%        LazyCompile: *resolvePath /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:492:36
+      1  100.0%          LazyCompile: ~lookupOnContext /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:448:44
+      1  100.0%            LazyCompile: *compile /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      1    4.8%        LazyCompile: *pushSource /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:881:34
+      1  100.0%          LazyCompile: ~append /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:394:26
+      1  100.0%            LazyCompile: *compile /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      1    4.8%        LazyCompile: *appendToBuffer /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:42:42
+      1  100.0%          LazyCompile: ~appendEscaped /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:416:40
+      1  100.0%            LazyCompile: *compile /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+     21    2.0%      LazyCompile: *readPackage internal/modules/cjs/loader.js:240:21
+     17   81.0%        LazyCompile: *readPackageScope internal/modules/cjs/loader.js:271:26
+      9   52.9%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1072:37
+      8   88.9%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:916:33
+      1   11.1%            LazyCompile: *Module._load internal/modules/cjs/loader.js:704:24
+      8   47.1%          LazyCompile: ~trySelf internal/modules/cjs/loader.js:391:17
+      8  100.0%            LazyCompile: ~Module._resolveFilename internal/modules/cjs/loader.js:796:35
+      3   14.3%        LazyCompile: ~readPackageScope internal/modules/cjs/loader.js:271:26
+      3  100.0%          LazyCompile: ~trySelf internal/modules/cjs/loader.js:391:17
+      3  100.0%            LazyCompile: ~Module._resolveFilename internal/modules/cjs/loader.js:796:35
+      1    4.8%        LazyCompile: ~tryPackage internal/modules/cjs/loader.js:288:20
+      1  100.0%          LazyCompile: *Module._findPath internal/modules/cjs/loader.js:444:28
+      1  100.0%            LazyCompile: ~Module._resolveFilename internal/modules/cjs/loader.js:796:35
+     20    1.9%      LazyCompile: ~getOptions internal/fs/utils.js:284:20
+     13   65.0%        LazyCompile: ~readFileSync fs.js:374:22
+     13  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1072:37
+     13  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:916:33
+      7   35.0%        LazyCompile: ~readFile fs.js:310:18
+      7  100.0%          LazyCompile: ~go$readFile /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/graceful-fs/graceful-fs.js:117:26
+      7  100.0%            LazyCompile: ~readFile /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/graceful-fs/graceful-fs.js:111:21
+     19    1.8%      LazyCompile: *compile /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+     13   68.4%        LazyCompile: *render /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/express-handlebars/lib/express-handlebars.js:143:15
+     13  100.0%          t __ZN2v88internal12_GLOBAL__N_123ScriptCompileTimerScopeD1Ev
+      6   31.6%        LazyCompile: ~compileInput /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:507:24
+      6  100.0%          LazyCompile: ~ret /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:515:15
+      6  100.0%            LazyCompile: ~_renderTemplate /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/express-handlebars/lib/express-handlebars.js:253:18
+     18    1.7%      LazyCompile: *render /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/express-handlebars/lib/express-handlebars.js:143:15
+     17   94.4%        t __ZN2v88internal12_GLOBAL__N_123ScriptCompileTimerScopeD1Ev
+      1    5.6%        LazyCompile: *renderView /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/express-handlebars/lib/express-handlebars.js:176:19
+      1  100.0%          t __ZN2v88internal12_GLOBAL__N_123ScriptCompileTimerScopeD1Ev
+     17    1.6%      LazyCompile: ~render /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/express-handlebars/lib/express-handlebars.js:143:15
+     17  100.0%        t __ZN2v88internal12_GLOBAL__N_123ScriptCompileTimerScopeD1Ev
+     17    1.6%      LazyCompile: *castChunk /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:52:19
+     12   70.6%        LazyCompile: *generateList /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:143:38
+      9   75.0%          LazyCompile: ~objectLiteral /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:123:40
+      9  100.0%            LazyCompile: ~objectLiteral /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:1002:40
+      3   25.0%          LazyCompile: *setupHelperArgs /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:1104:44
+      3  100.0%            LazyCompile: *invokeAmbiguous /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:699:44
+      3   17.6%        LazyCompile: ~generateList /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:143:38
+      3  100.0%          LazyCompile: ~objectLiteral /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:123:40
+      3  100.0%            LazyCompile: ~objectLiteral /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:1002:40
+      2   11.8%        LazyCompile: *wrap /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:101:22
+      1   50.0%          LazyCompile: *push /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:868:22
+      1  100.0%            LazyCompile: ~replaceStack /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:892:38
+      1   50.0%          LazyCompile: *invokeAmbiguous /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:699:44
+      1  100.0%            LazyCompile: *compile /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+     14    1.3%      LazyCompile: ~nextTick internal/process/task_queues.js:101:18
+      7   50.0%        LazyCompile: ~emitReadable _stream_readable.js:554:22
+      7  100.0%          LazyCompile: ~onEofChunk _stream_readable.js:524:20
+      7  100.0%            LazyCompile: ~readableAddChunk _stream_readable.js:231:26
+      3   21.4%        LazyCompile: ~resume _stream_readable.js:958:16
+      3  100.0%          LazyCompile: ~Readable.resume _stream_readable.js:944:37
+      2   66.7%            LazyCompile: ~_dump _http_incoming.js:290:49
+      1   33.3%            LazyCompile: ~Socket.resume net.js:611:35
+      1    7.1%        LazyCompile: ~onwrite _stream_writable.js:394:17
+      1  100.0%          LazyCompile: ~afterWriteDispatched internal/stream_base_commons.js:151:30
+      1  100.0%            LazyCompile: ~writevGeneric internal/stream_base_commons.js:118:23
+      1    7.1%        LazyCompile: ~endReadable _stream_readable.js:1310:21
+      1  100.0%          LazyCompile: ~Readable.read _stream_readable.js:390:35
+      1  100.0%            LazyCompile: ~flow _stream_readable.js:989:14
+      1    7.1%        LazyCompile: ~<anonymous> /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/mongodb/lib/core/sdam/topology.js:1052:32
+      1  100.0%          t __ZN2v88internal12_GLOBAL__N_123ScriptCompileTimerScopeD1Ev
+      1  100.0%            LazyCompile: ~processWaitQueue /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/mongodb/lib/core/sdam/topology.js:1007:26
+      1    7.1%        LazyCompile: ~<anonymous> /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/mongodb/lib/core/sdam/monitor.js:283:10
+      1  100.0%          LazyCompile: ~executeAndReschedule /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/mongodb/lib/utils.js:771:32
+      1  100.0%            LazyCompile: ~makeInterruptableAsyncInterval /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/mongodb/lib/utils.js:709:40
+     14    1.3%      LazyCompile: *nextTick internal/process/task_queues.js:101:18
+      7   50.0%        LazyCompile: ~onwrite _stream_writable.js:394:17
+      7  100.0%          LazyCompile: ~afterWriteDispatched internal/stream_base_commons.js:151:30
+      7  100.0%            LazyCompile: ~writevGeneric internal/stream_base_commons.js:118:23
+      5   35.7%        LazyCompile: ~emitReadable _stream_readable.js:554:22
+      5  100.0%          LazyCompile: ~onEofChunk _stream_readable.js:524:20
+      5  100.0%            LazyCompile: ~readableAddChunk _stream_readable.js:231:26
+      1    7.1%        LazyCompile: ~resume _stream_readable.js:958:16
+      1  100.0%          LazyCompile: ~Readable.resume _stream_readable.js:944:37
+      1  100.0%            LazyCompile: ~_dump _http_incoming.js:290:49
+      1    7.1%        LazyCompile: ~endReadable _stream_readable.js:1310:21
+      1  100.0%          LazyCompile: ~Readable.read _stream_readable.js:390:35
+      1  100.0%            LazyCompile: ~flow _stream_readable.js:989:14
+     13    1.2%      LazyCompile: ~renderView /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/express-handlebars/lib/express-handlebars.js:176:19
+     11   84.6%        t __ZN2v88internal12_GLOBAL__N_123ScriptCompileTimerScopeD1Ev
+      2   15.4%        LazyCompile: ~render /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/express/lib/view.js:133:40
+      2  100.0%          LazyCompile: ~tryRender /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/express/lib/application.js:638:19
+      2  100.0%            LazyCompile: ~render /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/express/lib/application.js:531:29
+     13    1.2%      LazyCompile: *quotedString /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:118:38
+     11   84.6%        LazyCompile: ~pushSource /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:881:34
+      7   63.6%          LazyCompile: ~appendEscaped /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:416:40
+      5   71.4%            LazyCompile: *compile /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      2   28.6%            LazyCompile: ~compile /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      3   27.3%          LazyCompile: ~append /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:394:26
+      3  100.0%            LazyCompile: *compile /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      1    9.1%          LazyCompile: ~compile /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      1  100.0%            LazyCompile: ~compileInput /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:507:24
+      2   15.4%        LazyCompile: ~quotedString /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:998:38
+      2  100.0%          LazyCompile: ~setupParams /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:1034:36
+      2  100.0%            LazyCompile: ~setupHelperArgs /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:1104:44
+     12    1.1%      LazyCompile: ~send /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/express/lib/response.js:107:25
+      8   66.7%        LazyCompile: ~done /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/express/lib/response.js:1006:27
+      8  100.0%          LazyCompile: ~renderView /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/express-handlebars/lib/express-handlebars.js:176:19
+      8  100.0%            t __ZN2v88internal12_GLOBAL__N_123ScriptCompileTimerScopeD1Ev
+      4   33.3%        LazyCompile: *renderView /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/express-handlebars/lib/express-handlebars.js:176:19
+      4  100.0%          t __ZN2v88internal12_GLOBAL__N_123ScriptCompileTimerScopeD1Ev
+     12    1.1%      LazyCompile: ~parse /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/content-type/index.js:106:16
+     12  100.0%        LazyCompile: ~setCharset /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/express/lib/utils.js:250:41
+     12  100.0%          LazyCompile: ~send /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/express/lib/response.js:107:25
+      9   75.0%            LazyCompile: ~done /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/express/lib/response.js:1006:27
+      3   25.0%            LazyCompile: *renderView /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/express-handlebars/lib/express-handlebars.js:176:19
+     12    1.1%      LazyCompile: *next /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/express/lib/router/index.js:176:16
+     11   91.7%        LazyCompile: ~error /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/serve-static/index.js:115:39
+      7   63.6%          LazyCompile: *emit events.js:263:44
+      7  100.0%            LazyCompile: ~error /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/send/index.js:267:45
+      4   36.4%          LazyCompile: ~emit events.js:263:44
+      4  100.0%            LazyCompile: ~error /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/send/index.js:267:45
+      1    8.3%        LazyCompile: ~query /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/express/lib/middleware/query.js:39:24
+      1  100.0%          LazyCompile: ~handle /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/express/lib/router/layer.js:86:49
+      1  100.0%            LazyCompile: *next /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/express/lib/router/index.js:176:16
+     11    1.0%      LazyCompile: ~closeSync /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/graceful-fs/graceful-fs.js:72:24
+      8   72.7%        LazyCompile: *readFileSync fs.js:374:22
+      8  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1072:37
+      6   75.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:916:33
+      2   25.0%            LazyCompile: *Module._load internal/modules/cjs/loader.js:704:24
+      3   27.3%        LazyCompile: ~readFileSync fs.js:374:22
+      3  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1072:37
+      3  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:916:33
+     11    1.0%      LazyCompile: ~Module._load internal/modules/cjs/loader.js:704:24
+     11  100.0%        LazyCompile: ~Module.require internal/modules/cjs/loader.js:944:36
+     11  100.0%          LazyCompile: ~require internal/modules/cjs/helpers.js:87:31
+      1    9.1%            LazyCompile: ~module.exports /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/bluebird/js/release/promise.js:2:26
+      1    9.1%            Eval: ~<anonymous> /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/ws/lib/buffer-util.js:1:1
+      1    9.1%            Eval: ~<anonymous> /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/mongodb/lib/core/topologies/shared.js:1:1
+      1    9.1%            Eval: ~<anonymous> /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/glob/sync.js:1:1
+      1    9.1%            Eval: ~<anonymous> /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/faker/lib/locales/pl/address/index.js:1:1
+      1    9.1%            Eval: ~<anonymous> /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/faker/lib/locales/en_US/phone_number/index.js:1:1
+      1    9.1%            Eval: ~<anonymous> /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/faker/lib/locales/de_AT/index.js:1:1
+      1    9.1%            Eval: ~<anonymous> /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/express/lib/express.js:1:1
+      1    9.1%            Eval: ~<anonymous> /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/connect-mongo/node_modules/mongodb/lib/operations/execute_operation.js:1:1
+      1    9.1%            Eval: ~<anonymous> /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/connect-mongo/node_modules/mongodb/lib/core/wireprotocol/kill_cursors.js:1:1
+      1    9.1%            Eval: ~<anonymous> /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/connect-mongo/node_modules/mongodb/lib/cmap/stream_description.js:1:1
+     11    1.0%      LazyCompile: *Module._findPath internal/modules/cjs/loader.js:444:28
+     11  100.0%        LazyCompile: ~Module._resolveFilename internal/modules/cjs/loader.js:796:35
+     11  100.0%          LazyCompile: *Module._load internal/modules/cjs/loader.js:704:24
+     11  100.0%            LazyCompile: ~Module.require internal/modules/cjs/loader.js:944:36
+     51    1.6%    T __ZN2v88internal21Builtin_JsonStringifyEiPmPNS0_7IsolateE
+     16   31.4%      LazyCompile: ~setupHelperArgs /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:1104:44
+     11   68.8%        LazyCompile: *invokeAmbiguous /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:699:44
+     10   90.9%          LazyCompile: *compile /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      9   90.0%            LazyCompile: ~compileInput /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:507:24
+      1   10.0%            LazyCompile: *render /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/express-handlebars/lib/express-handlebars.js:143:15
+      1    9.1%          LazyCompile: ~compile /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      1  100.0%            LazyCompile: ~compileInput /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:507:24
+      5   31.3%        LazyCompile: ~setupHelper /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:1020:36
+      5  100.0%          LazyCompile: ~invokeAmbiguous /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:699:44
+      4   80.0%            LazyCompile: *compile /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      1   20.0%            LazyCompile: ~compile /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+     14   27.5%      LazyCompile: *setupHelperArgs /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:1104:44
+     14  100.0%        LazyCompile: *invokeAmbiguous /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:699:44
+     14  100.0%          LazyCompile: *compile /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+     14  100.0%            LazyCompile: *render /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/express-handlebars/lib/express-handlebars.js:143:15
+      7   13.7%      LazyCompile: ~<anonymous> file:///Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/server.js:161:18
+      7  100.0%        LazyCompile: ~handle /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/express/lib/router/layer.js:86:49
+      7  100.0%          LazyCompile: ~next /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/express/lib/router/route.js:114:16
+      7  100.0%            LazyCompile: ~dispatch /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/express/lib/router/route.js:98:45
+      7   13.7%      LazyCompile: *invokeAmbiguous /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:699:44
+      6   85.7%        LazyCompile: *compile /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      6  100.0%          LazyCompile: *render /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/express-handlebars/lib/express-handlebars.js:143:15
+      6  100.0%            t __ZN2v88internal12_GLOBAL__N_123ScriptCompileTimerScopeD1Ev
+      1   14.3%        LazyCompile: ~compile /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      1  100.0%          LazyCompile: ~compileInput /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:507:24
+      1  100.0%            LazyCompile: ~ret /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:515:15
+      6   11.8%      LazyCompile: ~internalNameLookup /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:66:50
+      6  100.0%        LazyCompile: ~nameLookup /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:29:34
+      4   66.7%          LazyCompile: ~<anonymous> /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:505:34
+      3   75.0%            LazyCompile: ~replaceStack /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:892:38
+      1   25.0%            LazyCompile: *replaceStack /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:892:38
+      1   16.7%          LazyCompile: ~setupHelper /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:1020:36
+      1  100.0%            LazyCompile: ~invokeAmbiguous /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:699:44
+      1   16.7%          LazyCompile: ~invokeAmbiguous /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:699:44
+      1  100.0%            LazyCompile: *compile /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      1    2.0%      LazyCompile: *resolvePath /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:492:36
+      1  100.0%        LazyCompile: ~lookupOnContext /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:448:44
+      1  100.0%          LazyCompile: *compile /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      1  100.0%            LazyCompile: *render /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/express-handlebars/lib/express-handlebars.js:143:15
+     38    1.2%    LazyCompile: *parse /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:269:30
+     38  100.0%      LazyCompile: ~parseWithoutProcessing /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/base.js:33:32
+     20   52.6%        LazyCompile: ~parse /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/base.js:51:15
+     20  100.0%          LazyCompile: ~compileInput /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:507:24
+     20  100.0%            LazyCompile: ~ret /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:515:15
+     18   47.4%        LazyCompile: *render /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/express-handlebars/lib/express-handlebars.js:143:15
+     18  100.0%          t __ZN2v88internal12_GLOBAL__N_123ScriptCompileTimerScopeD1Ev
+
+   1059   15.5%  t node::fs::Read(v8::FunctionCallbackInfo<v8::Value> const&)
+   1059  100.0%    T __ZN2v88internal21Builtin_HandleApiCallEiPmPNS0_7IsolateE
+   1036   97.8%      LazyCompile: ~readSync fs.js:555:18
+    805   77.7%        LazyCompile: ~tryReadSync fs.js:362:21
+    805  100.0%          LazyCompile: ~readFileSync fs.js:374:22
+    790   98.1%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1072:37
+     11    1.4%            LazyCompile: ~cjsPreparseModuleExports internal/modules/esm/translators.js:214:34
+    231   22.3%        LazyCompile: *readFileSync fs.js:374:22
+    231  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1072:37
+    144   62.3%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:916:33
+     87   37.7%            LazyCompile: *Module._load internal/modules/cjs/loader.js:704:24
+     23    2.2%      LazyCompile: ~read internal/fs/read_file_context.js:79:7
+     23  100.0%        LazyCompile: ~readFileAfterStat fs.js:285:27
+
+    467    6.8%  T node::contextify::ContextifyContext::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+    467  100.0%    T __ZN2v88internal21Builtin_HandleApiCallEiPmPNS0_7IsolateE
+    467  100.0%      LazyCompile: ~wrapSafe internal/modules/cjs/loader.js:964:18
+    467  100.0%        LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1017:37
+    467  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1072:37
+    422   90.4%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:916:33
+     45    9.6%            LazyCompile: *Module._load internal/modules/cjs/loader.js:704:24
+
+    149    2.2%  T _kpersona_info
+
+    123    1.8%  UNKNOWN
+     44   35.8%    LazyCompile: *stat internal/modules/cjs/loader.js:132:14
+     29   65.9%      LazyCompile: ~Module._findPath internal/modules/cjs/loader.js:444:28
+     29  100.0%        LazyCompile: ~Module._resolveFilename internal/modules/cjs/loader.js:796:35
+     29  100.0%          LazyCompile: ~Module._load internal/modules/cjs/loader.js:704:24
+     29  100.0%            LazyCompile: ~Module.require internal/modules/cjs/loader.js:944:36
+     15   34.1%      LazyCompile: ~tryFile internal/modules/cjs/loader.js:334:17
+     15  100.0%        LazyCompile: ~tryExtensions internal/modules/cjs/loader.js:350:23
+     11   73.3%          LazyCompile: ~Module._findPath internal/modules/cjs/loader.js:444:28
+     11  100.0%            LazyCompile: ~Module._resolveFilename internal/modules/cjs/loader.js:796:35
+      4   26.7%          LazyCompile: ~tryPackage internal/modules/cjs/loader.js:288:20
+      4  100.0%            LazyCompile: ~Module._findPath internal/modules/cjs/loader.js:444:28
+     26   21.1%    LazyCompile: *tryExtensions internal/modules/cjs/loader.js:350:23
+     13   50.0%      LazyCompile: ~Module._findPath internal/modules/cjs/loader.js:444:28
+     13  100.0%        LazyCompile: ~Module._resolveFilename internal/modules/cjs/loader.js:796:35
+     13  100.0%          LazyCompile: ~Module._load internal/modules/cjs/loader.js:704:24
+     13  100.0%            LazyCompile: ~Module.require internal/modules/cjs/loader.js:944:36
+     12   46.2%      LazyCompile: *Module._findPath internal/modules/cjs/loader.js:444:28
+     12  100.0%        LazyCompile: ~Module._resolveFilename internal/modules/cjs/loader.js:796:35
+     10   83.3%          LazyCompile: ~Module._load internal/modules/cjs/loader.js:704:24
+     10  100.0%            LazyCompile: ~Module.require internal/modules/cjs/loader.js:944:36
+      2   16.7%          LazyCompile: *Module._load internal/modules/cjs/loader.js:704:24
+      2  100.0%            LazyCompile: ~Module.require internal/modules/cjs/loader.js:944:36
+      1    3.8%      LazyCompile: ~tryPackage internal/modules/cjs/loader.js:288:20
+      1  100.0%        LazyCompile: *Module._findPath internal/modules/cjs/loader.js:444:28
+      1  100.0%          LazyCompile: ~Module._resolveFilename internal/modules/cjs/loader.js:796:35
+      1  100.0%            LazyCompile: ~Module._load internal/modules/cjs/loader.js:704:24
+     18   14.6%    LazyCompile: *Module._findPath internal/modules/cjs/loader.js:444:28
+     18  100.0%      LazyCompile: ~Module._resolveFilename internal/modules/cjs/loader.js:796:35
+     16   88.9%        LazyCompile: ~Module._load internal/modules/cjs/loader.js:704:24
+     16  100.0%          LazyCompile: ~Module.require internal/modules/cjs/loader.js:944:36
+     16  100.0%            LazyCompile: ~require internal/modules/cjs/helpers.js:87:31
+      2   11.1%        LazyCompile: *Module._load internal/modules/cjs/loader.js:704:24
+      2  100.0%          LazyCompile: ~Module.require internal/modules/cjs/loader.js:944:36
+      2  100.0%            LazyCompile: ~require internal/modules/cjs/helpers.js:87:31
+      5    4.1%    t __ZN2v88internal12_GLOBAL__N_123ScriptCompileTimerScopeD1Ev
+      2   40.0%      t __ZN2v88internal12_GLOBAL__N_123ScriptCompileTimerScopeD1Ev
+      1   50.0%        LazyCompile: ~readPackage internal/modules/cjs/loader.js:240:21
+      1  100.0%          LazyCompile: ~tryPackage internal/modules/cjs/loader.js:288:20
+      1  100.0%            LazyCompile: ~Module._findPath internal/modules/cjs/loader.js:444:28
+      1   50.0%        LazyCompile: ~StateMachine.ctor /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/mongoose/lib/statemachine.js:34:29
+      1  100.0%          Eval: ~<anonymous> /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/mongoose/lib/internal.js:1:1
+      1  100.0%            LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1017:37
+      1   20.0%      LazyCompile: ~parse /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/content-type/index.js:106:16
+      1  100.0%        LazyCompile: ~setCharset /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/express/lib/utils.js:250:41
+      1  100.0%          LazyCompile: ~send /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/express/lib/response.js:107:25
+      1  100.0%            LazyCompile: ~done /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/express/lib/response.js:1006:27
+      1   20.0%      LazyCompile: ~onStreamRead internal/stream_base_commons.js:165:22
+      1   20.0%      LazyCompile: *readPackageScope internal/modules/cjs/loader.js:271:26
+      1  100.0%        LazyCompile: ~trySelf internal/modules/cjs/loader.js:391:17
+      1  100.0%          LazyCompile: ~Module._resolveFilename internal/modules/cjs/loader.js:796:35
+      1  100.0%            LazyCompile: ~Module._load internal/modules/cjs/loader.js:704:24
+
+    112    1.6%  t node::fs::InternalModuleReadJSON(v8::FunctionCallbackInfo<v8::Value> const&)
+    112  100.0%    T __ZN2v88internal21Builtin_HandleApiCallEiPmPNS0_7IsolateE
+    112  100.0%      LazyCompile: ~read internal/modules/package_json_reader.js:16:14
+     69   61.6%        LazyCompile: ~readPackage internal/modules/cjs/loader.js:240:21
+     41   59.4%          LazyCompile: ~resolveExports internal/modules/cjs/loader.js:422:24
+     41  100.0%            LazyCompile: ~Module._findPath internal/modules/cjs/loader.js:444:28
+     17   24.6%          LazyCompile: ~tryPackage internal/modules/cjs/loader.js:288:20
+     17  100.0%            LazyCompile: ~Module._findPath internal/modules/cjs/loader.js:444:28
+      7   10.1%          LazyCompile: ~readPackageScope internal/modules/cjs/loader.js:271:26
+      6   85.7%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1072:37
+      1   14.3%            LazyCompile: ~shouldUseESMLoader internal/modules/run_main.js:23:28
+      4    5.8%          LazyCompile: *Module._findPath internal/modules/cjs/loader.js:444:28
+      4  100.0%            LazyCompile: ~Module._resolveFilename internal/modules/cjs/loader.js:796:35
+     32   28.6%        LazyCompile: *readPackage internal/modules/cjs/loader.js:240:21
+     16   50.0%          LazyCompile: ~tryPackage internal/modules/cjs/loader.js:288:20
+     11   68.8%            LazyCompile: ~Module._findPath internal/modules/cjs/loader.js:444:28
+      5   31.3%            LazyCompile: *Module._findPath internal/modules/cjs/loader.js:444:28
+     13   40.6%          LazyCompile: *Module._findPath internal/modules/cjs/loader.js:444:28
+     13  100.0%            LazyCompile: ~Module._resolveFilename internal/modules/cjs/loader.js:796:35
+      3    9.4%          LazyCompile: *readPackageScope internal/modules/cjs/loader.js:271:26
+      3  100.0%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1072:37
+      9    8.0%        LazyCompile: ~getPackageConfig internal/modules/esm/resolve.js:85:26
+      7   77.8%          LazyCompile: ~packageResolve internal/modules/esm/resolve.js:579:24
+      7  100.0%            LazyCompile: ~moduleResolve internal/modules/esm/resolve.js:684:23
+      2   22.2%          LazyCompile: ~getPackageScopeConfig internal/modules/esm/resolve.js:137:31
+      2  100.0%            LazyCompile: ~getPackageType internal/modules/esm/resolve.js:568:24
+      2    1.8%        LazyCompile: *readPackageScope internal/modules/cjs/loader.js:271:26
+      2  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1072:37
+      2  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:916:33
+
+    109    1.6%  T _getaudit
+
+     83    1.2%  T node::fs::Close(v8::FunctionCallbackInfo<v8::Value> const&)
+     83  100.0%    T __ZN2v88internal21Builtin_HandleApiCallEiPmPNS0_7IsolateE
+     61   73.5%      LazyCompile: ~close internal/fs/read_file_context.js:102:8
+     61  100.0%        LazyCompile: ~readFileAfterRead internal/fs/read_file_context.js:20:27
+     22   26.5%      LazyCompile: ~closeSync fs.js:434:19
+     21   95.5%        LazyCompile: ~closeSync /Users/igorseiji/Principal/Program/CoderHouse/Backend/Clase32/Clase32-Logs-Profiling/node_modules/graceful-fs/graceful-fs.js:72:24
+     13   61.9%          LazyCompile: ~readFileSync fs.js:374:22
+     13  100.0%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1072:37
+      8   38.1%          LazyCompile: *readFileSync fs.js:374:22
+      8  100.0%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1072:37
+      1    4.5%        LazyCompile: ~readFileSync fs.js:374:22
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1072:37
+      1  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:916:33
+

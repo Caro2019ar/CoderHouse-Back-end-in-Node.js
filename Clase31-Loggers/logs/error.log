@@ -1,0 +1,8 @@
+{"level":50,"time":1622035141788,"pid":3030,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"error"}
+{"level":50,"time":1622035160324,"pid":3036,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"error"}
+{"level":50,"time":1622035301705,"pid":3067,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017"}
+{"level":50,"time":1622035997744,"pid":3289,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017"}
+{"level":50,"time":1622036043271,"pid":3386,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: ReferenceError: MongoDB is not defined"}
+{"level":50,"time":1622036067442,"pid":3413,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: ReferenceError: MongoDB is not defined"}
+{"level":50,"time":1622036070759,"pid":3422,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: ReferenceError: MongoDB is not defined"}
+{"level":50,"time":1622036116916,"pid":3436,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: ReferenceError: MongoDB is not defined"}
