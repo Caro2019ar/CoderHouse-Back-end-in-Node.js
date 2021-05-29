@@ -1,0 +1,128 @@
+<link rel="stylesheet" href="css/estilos.css" />
+<script src="/socket.io/socket.io.js"></script>
+<nav class="navbar navbar-expand-lg bg-dark">
+	<div class="w-50 float-left">
+		<span>Bienvenido<h5>{{nombre}}</h5></span>
+	</div>
+	<b><a href="#">{{email}}</a></b>
+	<div class="float-right">
+		<button class="btn" onclick="location.href='/logout'">
+			<b>Desloguear</b><br /><img src="{{foto}}" width="70" alt="" />
+		</button>
+	</div>
+	{{! </div> }}
+</nav>
+<div class="jumbotron">
+	<h1>Ingrese Producto</h1>
+	<br />
+
+	<form action="/api/productos/guardar" method="POST" autocomplete="off">
+		{{! <form autocomplete="off"> }}
+		<!-- Campo nombre del producto -->
+		<div class="form-group">
+			<label for="nombre">Nombre</label>
+			<input
+				id="nombre"
+				class="form-control"
+				type="text"
+				name="title"
+				required
+			/>
+		</div>
+
+		<!-- Campo precio del producto -->
+		<div class="form-group">
+			<label for="precio">Precio</label>
+			<input
+				id="precio"
+				class="form-control"
+				type="number"
+				step="0.01"
+				name="price"
+				required
+			/>
+		</div>
+
+		<!-- Campo url de la foto del producto -->
+		<div class="form-group">
+			<label for="foto">Foto URL</label>
+			<input id="foto" class="form-control" type="url" name="thumbnail" />
+		</div>
+
+		<!-- Botón de envío -->
+		<button class="btn btn-success mt-3">Enviar</button>
+	</form>
+
+	<div class="mt-5" id="datos"></div>
+</div>
+
+<div class="jumbotron" id="centro-mensajes">
+	<h1>Centro de Mensajes (Compresión: <span id="compresion-info"></span>%)</h1>
+	<br />
+	<input
+		type="text"
+		id="username"
+		class="form-control w-50 my-2 mr-2"
+		placeholder="Ingresá tu email"
+	/>
+	<input
+		type="text"
+		id="firstname"
+		class="form-control w-50 my-2 mr-2"
+		placeholder="Ingresá tu nombre"
+	/>
+	<input
+		type="text"
+		id="lastname"
+		class="form-control w-50 my-2 mr-2"
+		placeholder="Ingresá tu apellido"
+	/>
+	<input
+		type="text"
+		id="age"
+		class="form-control w-50 my-2 mr-2"
+		placeholder="Ingresá tu edad"
+	/>
+	<input
+		type="text"
+		id="alias"
+		class="form-control w-50 my-2 mr-2"
+		placeholder="Ingresá tu alias"
+	/>
+	<input
+		type="text"
+		id="avatar"
+		class="form-control w-50 my-2 mr-2"
+		placeholder="Ingresá tu avatar (url)"
+	/>
+	<hr />
+	<div id="messages"></div>
+
+	<form
+		class="form-inline mt-3"
+		onsubmit="addMessage(event)"
+		autocomplete="off"
+	>
+		<input
+			disabled
+			type="text"
+			id="texto"
+			class="form-control my-2 mr-2"
+			placeholder="Ingresá un mensaje..."
+		/>
+		<input
+			disabled
+			id="enviar"
+			class="btn btn-primary my-2"
+			type="submit"
+			value="Enviar!"
+		/>
+	</form>
+</div>
+
+<script
+	src="https://cdn.jsdelivr.net/npm/normalizr@3.6.1/dist/normalizr.browser.min.js"
+></script>
+<script src="js/handlebars-v4.7.6.js"></script>
+<script src="js/main.js"></script>
+<script src="js/chat.js"></script>

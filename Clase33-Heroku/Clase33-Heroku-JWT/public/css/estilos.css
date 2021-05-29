@@ -1,0 +1,26 @@
+h1 {
+	color: blue;
+}
+
+h2 {
+	color: brown;
+}
+
+label {
+	font-weight: bold;
+	font-style: italic;
+}
+
+.jumbotron {
+	/* min-height: 100vh; */
+	padding-top: 32px;
+	padding-bottom: 32px;
+}
+
+.float-right {
+	padding-left: 400px;
+}
+
+section {
+	font-size: 11px;
+}

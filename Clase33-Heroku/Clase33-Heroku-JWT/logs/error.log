@@ -1,0 +1,75 @@
+{"level":50,"time":1622035141788,"pid":3030,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"error"}
+{"level":50,"time":1622035160324,"pid":3036,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"error"}
+{"level":50,"time":1622035301705,"pid":3067,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017"}
+{"level":50,"time":1622035997744,"pid":3289,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017"}
+{"level":50,"time":1622036043271,"pid":3386,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: ReferenceError: MongoDB is not defined"}
+{"level":50,"time":1622036067442,"pid":3413,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: ReferenceError: MongoDB is not defined"}
+{"level":50,"time":1622036070759,"pid":3422,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: ReferenceError: MongoDB is not defined"}
+{"level":50,"time":1622036116916,"pid":3436,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: ReferenceError: MongoDB is not defined"}
+{"level":50,"time":1622040448832,"pid":4248,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017"}
+{"level":50,"time":1622040494818,"pid":4269,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017"}
+{"level":50,"time":1622040609569,"pid":4342,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017"}
+{"level":50,"time":1622040713156,"pid":4410,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017"}
+{"level":50,"time":1622040802634,"pid":4428,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017"}
+{"level":50,"time":1622044104318,"pid":4820,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017"}
+{"level":50,"time":1622044533548,"pid":4931,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017"}
+{"level":50,"time":1622044913250,"pid":5267,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017"}
+{"level":50,"time":1622045429665,"pid":5504,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017"}
+{"level":50,"time":1622045734857,"pid":5684,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017"}
+{"level":50,"time":1622049300175,"pid":6230,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017"}
+{"level":50,"time":1622049651316,"pid":6392,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017"}
+{"level":50,"time":1622050043619,"pid":6602,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017"}
+{"level":50,"time":1622050301949,"pid":6663,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017"}
+{"level":50,"time":1622050861332,"pid":6757,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017"}
+{"level":50,"time":1622052983145,"pid":7134,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017"}
+{"level":50,"time":1622053242554,"pid":7191,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017"}
+{"level":50,"time":1622053456262,"pid":7355,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017"}
+{"level":50,"time":1622134336780,"pid":4544,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017"}
+{"level":50,"time":1622135892257,"pid":911,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017"}
+{"level":50,"time":1622136268892,"pid":1079,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017"}
+{"level":50,"time":1622202960402,"pid":1513,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017"}
+{"level":50,"time":1622203102916,"pid":1551,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017"}
+{"level":50,"time":1622203196449,"pid":1590,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017"}
+{"level":50,"time":1622203351756,"pid":1620,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017"}
+{"level":50,"time":1622203464044,"pid":1637,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017"}
+{"level":50,"time":1622203505384,"pid":1645,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017"}
+{"level":50,"time":1622203607486,"pid":1655,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017"}
+{"level":50,"time":1622203821792,"pid":1688,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017"}
+{"level":50,"time":1622204180197,"pid":1719,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017"}
+{"level":50,"time":1622204300270,"pid":1784,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017"}
+{"level":50,"time":1622204716442,"pid":1843,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017"}
+{"level":50,"time":1622205878037,"pid":2033,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017"}
+{"level":50,"time":1622206001634,"pid":2061,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017"}
+{"level":50,"time":1622206655385,"pid":2141,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017"}
+{"level":50,"time":1622206724152,"pid":2154,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017"}
+{"level":50,"time":1622206845188,"pid":2165,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017"}
+{"level":50,"time":1622206997053,"pid":2184,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017"}
+{"level":50,"time":1622207437160,"pid":2231,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017"}
+{"level":50,"time":1622207511246,"pid":2244,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017"}
+{"level":50,"time":1622207564584,"pid":2264,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017"}
+{"level":50,"time":1622207616830,"pid":2281,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017"}
+{"level":50,"time":1622207800296,"pid":2297,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017"}
+{"level":50,"time":1622208252585,"pid":2335,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017"}
+{"level":50,"time":1622208355427,"pid":2349,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017"}
+{"level":50,"time":1622208516480,"pid":2383,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017"}
+{"level":50,"time":1622208581685,"pid":2405,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017"}
+{"level":50,"time":1622208670862,"pid":2421,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017"}
+{"level":50,"time":1622209191467,"pid":2461,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017"}
+{"level":50,"time":1622209233544,"pid":2468,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017"}
+{"level":50,"time":1622209307876,"pid":2479,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017"}
+{"level":50,"time":1622209753618,"pid":2515,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017"}
+{"level":50,"time":1622209798863,"pid":2523,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017"}
+{"level":50,"time":1622209870683,"pid":2540,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017"}
+{"level":50,"time":1622209990690,"pid":2576,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017"}
+{"level":50,"time":1622210104455,"pid":2587,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017"}
+{"level":50,"time":1622210223565,"pid":2597,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017"}
+{"level":50,"time":1622210309589,"pid":2618,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017"}
+{"level":50,"time":1622210462206,"pid":2676,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017"}
+{"level":50,"time":1622210564307,"pid":2696,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017"}
+{"level":50,"time":1622210764063,"pid":2778,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017"}
+{"level":50,"time":1622210920722,"pid":2846,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017"}
+{"level":50,"time":1622211105284,"pid":2913,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017"}
+{"level":50,"time":1622211489144,"pid":3135,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017"}
+{"level":50,"time":1622211547212,"pid":3155,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017"}
+{"level":50,"time":1622211664616,"pid":3177,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017"}
+{"level":50,"time":1622211713037,"pid":3193,"hostname":"MacBook-Pro-de-Igor-3143.local","msg":"Error en conexión de Base de datos: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017"}
