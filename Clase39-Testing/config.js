@@ -8,8 +8,6 @@ dotenv.config({
 
 const entorno = {
 	NODE_ENV: process.env.NODE_ENV || "development",
-	MONGO_DB_URI:
-		"mongodb+srv://caro:12345699@cluster0.cwvci.mongodb.net/passport?retryWrites=true&w=majority" ||
-		"URI",
+	MONGO_DB_URI: process.env.MONGO_DB_URI || "URI",
 };
 export default entorno;
