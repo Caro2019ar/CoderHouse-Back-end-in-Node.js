@@ -5,15 +5,16 @@ import MongoStore from "connect-mongo";
 import handlebars from "express-handlebars";
 import bCrypt from "bcrypt";
 import { Strategy as LocalStrategy } from "passport-local";
-import { User } from "../models/user.js";
+import { user } from "../models/model.js";
 import cookieParser from "cookie-parser";
+import dotenv from "dotenv";
+import config from "../config.js";
 const app = express();
-const MONGO_DB_URI =
-	"mongodb+srv://caro:12345699@cluster0.cwvci.mongodb.net/passport?retryWrites=true&w=majority";
+
 app.use(
 	session({
 		store: MongoStore.create({
-			mongoUrl: MONGO_DB_URI,
+			mongoUrl: config.MONGO_DB_URI,
 			ttl: 600,
 		}),
 		secret: "sh",
@@ -109,7 +110,6 @@ passport.serializeUser((user, done) => {
 	done(null, user._id);
 });
 
-
 passport.deserializeUser((id, done) => {
 	User.findById(id, function (err, user) {
 		done(err, user);
@@ -148,7 +148,6 @@ app.post(
 app.get("/failregister", (req, res) => {
 	res.render("register-error", {});
 });
-
 
 app.get("/logout", (req, res) => {
 	const { username } = req.user;

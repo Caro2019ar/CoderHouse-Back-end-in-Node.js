@@ -4,29 +4,29 @@ const genId = {
 		return this._id++;
 	},
 };
-let productos=[];
+let productos = [];
 export default class persistenciaMemory {
-   constructor() {
-        this.productos = []
-    }
- listarAll(){
-		return productos
+	constructor() {
+		this.productos = [];
 	}
-	 listar(id) {
-		let prodDev =  this.prodPorId(id);
+	listarAll() {
+		return productos;
+	}
+	listar(id) {
+		let prodDev = this.prodPorId(id);
 		return !prodDev.length ? { error: "este producto no existe" } : prodDev;
 	}
-    guardar(prod) {
+	guardar(prod) {
 		let id;
 		prod.id = genId.id;
 		productos.push(prod);
 		console.log("Producto guardado", prod);
 		return prod;
 	}
-	 prodPorId(id) {
+	prodPorId(id) {
 		return productos.filter((prod) => prod.id === Number(id));
 	}
-	actualizar(prod,id) {
+	actualizar(prod, id) {
 		let indexAactualizar = productos.map((e) => e.id).indexOf(Number(id));
 		return indexAactualizar < 0
 			? { error: "Este producto no existe" }
@@ -36,9 +36,7 @@ export default class persistenciaMemory {
 		let prodBor = this.prodPorId(id);
 		return !prodBor.length
 			? { error: "este producto no existe" }
-			: ((productos = productos.filter(
-					(prod) => prod.id != Number(id)
-			  )),
+			: ((productos = productos.filter((prod) => prod.id != Number(id))),
 			  prodBor);
 	}
 }

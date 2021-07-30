@@ -1,4 +1,4 @@
-import * as model from './model.js'
+import * as model from './models/model.js'
 
 class MensajesMongoDB {
     constructor() {}

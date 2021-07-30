@@ -4,20 +4,29 @@ const router = express.Router();
 /* -------------------------------------- */
 /*       FACTORY - MongoDB                */
 /* -------------------------------------- */
+
 import Productos from "../api/productos.js";
 let productos = new Productos();
+
 /* -------------------------------------- */
 /*       FACTORY - Memory                */
 /* -------------------------------------- */
 // import productos from "../db/factory.js";
 
 router.get("/productos/listar", async (req, res) => {
+	
 	res.json(await productos.listarAll());
 });
 
 router.get("/productos/listar/:id", async (req, res) => {
 	let { id } = req.params;
-	res.json(await productos.listar(id));
+	console.log(req.params.id);
+	res.json(await productos.buscar(id));
+});
+
+router.get("/productos/buscardto/:id", async (req, res) => {
+	let { id } = req.params;
+	res.json(await productos.buscarDTO(id));
 });
 
 router.post("/productos/guardar", async (req, res) => {

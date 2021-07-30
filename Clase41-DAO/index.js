@@ -7,7 +7,7 @@ import handlebars from "express-handlebars";
 import passport from "passport";
 import bCrypt from "bcrypt";
 import { Strategy as LocalStrategy } from "passport-local";
-import { User } from "./models/user.js";
+import { user } from "./models/model.js";
 import { Server as Socket } from "socket.io";
 import os from "os";
 import cluster from "cluster";
@@ -16,12 +16,15 @@ import productosRouter from "./routes/productos.js";
 import indexRouter from "./routes/index.js";
 import info from "./services/info.js";
 import path from "path";
-import { MongoDB } from "./db/db.js";
-
+import { MongoDB } from "./db/mongoDB.js";
+import config from "./config.js";
+import yargs from "yargs";
+import { hideBin } from "yargs/helpers";
 const __dirname = path.resolve();
-const MONGO_DB_URI =
-	"mongodb+srv://caro:12345699@cluster0.cwvci.mongodb.net/passport?retryWrites=true&w=majority";
 const app = express();
+
+const argv = yargs(hideBin(process.argv)).argv;
+argv.port ? false : (argv.port = 8080);
 
 //----------------------------------------------------------------------
 // NODEMAILER y TWILIO
@@ -39,7 +42,7 @@ app.use(compression());
 const numCPUs = os.cpus().length;
 const server = http.Server(app);
 const io = new Socket(server);
-const PORT = process.env.PORT || 3002;
+
 app.use(express.static(path.join(__dirname, "public")));
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
@@ -58,7 +61,6 @@ app.engine(
 app.set("view engine", "hbs");
 app.set("views", "./views");
 
-
 /* --------------------------------------------------------------------------- */
 /* MASTER */
 
@@ -71,11 +73,11 @@ if (process.argv.includes("cluster") && cluster.isMaster) {
 		pinoWarn.warn("Worker", worker.process.pid, " died");
 	});
 } else {
-	const srv = app.listen(PORT, async () => {
+	const srv = app.listen(argv.port, async () => {
 		console.log(
-			`Modo Fork - Servidor express escuchando en el puerto ${PORT} - PID WORKER ${process.pid}`
+			`Modo Fork - Servidor express escuchando en el puerto ${argv.port} - PID WORKER ${process.pid} - Entorno: ${config.NODE_ENV}`
 		);
-	const mongo = new MongoDB(MONGO_DB_URI);
-	await mongo.conectar(MONGO_DB_URI);
+		const mongo = new MongoDB(config.MONGO_DB_URI);
+		await mongo.conectar(config.MONGO_DB_URI);
 	});
 }
