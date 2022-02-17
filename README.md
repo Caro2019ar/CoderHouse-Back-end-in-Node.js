@@ -1,6 +1,8 @@
-# CoderHouse
+# CoderHouse - Back end in Node.js
 
-47 mini-projects from Back end course of CoderHouse (in Spanish)
+47 mini-projects from Back end course of CoderHouse 
+
+## Course syllabus (in Spanish):
 
 * Clase 1: Principios de programación Backend
 * Clase 2: Principios básicos de Javascript
