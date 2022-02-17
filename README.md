@@ -1,6 +1,6 @@
 # CoderHouse
 
-48 mini-projects from Back end course of CoderHouse
+47 mini-projects from Back end course of CoderHouse (in Spanish)
 
 * Clase 1: Principios de programación Backend
 * Clase 2: Principios básicos de Javascript
@@ -50,3 +50,6 @@
 * Clase 46: Introducción a frameworks de desarrollo Backend - Parte 2
 * Clase 47: El futuro de Nodejs: Deno
 * Clase 48: Desarrollo de una API REST en Deno
+
+_Please find the final project of Back end course in this repo:_
+[Back-end-Final-project](https://github.com/Caro2019ar/Back-end-Final-project)
